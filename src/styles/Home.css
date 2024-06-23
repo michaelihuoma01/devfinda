@@ -1,0 +1,52 @@
+.expand-container{
+ padding: 20px 32px 0px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.expand{
+ display: flex;
+ flex-direction: column;
+ gap: 14px;
+ width: 647px;
+}
+
+.expand h1{
+ font-size: 46px;
+width: 460.3px;
+}
+
+.expand p{
+ color: #52525B;
+ font-size: 18px;
+ width: 512px;
+}
+
+.home-info{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 32px 0px;
+gap: 48px;
+}
+
+.home-info h1{
+ font-size: 46px;
+}
+
+.home-info p{
+  color: #52525B;
+ font-size: 18px;
+}
+
+.qualities{
+ display: flex;
+ flex-direction: column;
+ gap: 8px;
+}
+.home-info h3{
+ font-size: 18px;
+ color: #000;
+}
+

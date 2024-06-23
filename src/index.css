@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+.hiring-btn{
+  background-color: #395ff7;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+}
