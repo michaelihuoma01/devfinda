@@ -1,6 +1,7 @@
 import React from 'react'
-import Hiring from '../UI/Hiring'
 import '../styles/Home.css'
+import { Link } from 'react-router-dom'
+
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
             Hire world-class tech talent overseas at a fraction of the cost of
             US hires
           </p>
-          <Hiring />
+          <Link className='hiring-btn s-btn'>Start Hiring!</Link>
         </div>
         <img src='' alt='' />
       </section>
@@ -55,11 +56,11 @@ export default function Home() {
               <img src='' alt='' />
               <div>
                 <span>"</span>
-                <h3>
+                <h4>
                   I really enjoyed working with the team to find a new developer
                   for my team! I've been extremely happy with the entire
                   experience.
-                </h3>
+                </h4>
                 <h5>Jay, Agency Founder</h5>
               </div>
             </div>

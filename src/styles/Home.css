@@ -14,13 +14,16 @@
 
 .expand h1{
  font-size: 46px;
-width: 460.3px;
+/* width: 485.3px; */
+  font-family: 'Recoleta Black', sans-serif;
+
 }
 
 .expand p{
  color: #52525B;
  font-size: 18px;
  width: 512px;
+ font-family: "Plus Jakarta Sans";
 }
 
 .home-info{
@@ -29,15 +32,23 @@ width: 460.3px;
  justify-content: space-between;
  padding: 20px 32px 0px;
 gap: 48px;
+
 }
 
 .home-info h1{
  font-size: 46px;
+  font-family: 'Recoleta Black', sans-serif;
+
 }
 
 .home-info p{
   color: #52525B;
  font-size: 18px;
+ font-family: "Plus Jakarta Sans";
+}
+
+.s-btn{
+  width: 150px;
 }
 
 .qualities{
@@ -45,8 +56,25 @@ gap: 48px;
  flex-direction: column;
  gap: 8px;
 }
+
 .home-info h3{
  font-size: 18px;
  color: #000;
+ font-family: "Plus Jakarta Sans";
+ width: 395px;
+}
+.home-info h4{
+ font-size: 14px;
+ color: #000;
+ font-family: "Plus Jakarta Sans";
+ width: 395px;
+}
+
+.home-info h5{
+ font-size: 14px;
+ color: #333333;
+ font-family: "Plus Jakarta Sans";
+ font-weight: 100;
+ font-style: italic;
 }
 

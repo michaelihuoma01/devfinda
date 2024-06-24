@@ -10,6 +10,7 @@
 .brand {
   color: #5271fe;
   margin: 0;
+  font-family: "Plus Jakarta Sans";
 }
 
 .menu-icon {
@@ -50,6 +51,7 @@
   transition: max-height 1s ease-out;
   overflow: hidden;
   max-height: 0;
+  font-family: "Plus Jakarta Sans";
 }
 
 .menu.open {

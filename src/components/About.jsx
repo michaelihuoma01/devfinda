@@ -4,7 +4,7 @@ import '../styles/About.css'
 export default function About() {
   return (
     <>
-      <main className='about'>
+      <main id='#about' className='about'>
         <div className='about-info'>
           <h1>Thats where we come in</h1>
           <p>
@@ -70,61 +70,61 @@ export default function About() {
             </div>
           </main>
         </section>
-        <article className='roles-container'>
-          <div className='roles'>
-            <h1>Essential Roles Sourced Globally</h1>
-            <p>
-              We work with businesses of all sizes, from startups to large
-              corporations, across various industries.
-            </p>
-          </div>
-          <main>
-            <div>
-              <h1>Frontend Developers</h1>
-              <p>
-                Developong the user interface, interactions and connecting with
-                the backend with langugaes like React, HTML/CSS, etc
-              </p>
-            </div>
-            <div>
-              <h1>Backend Developers</h1>
-              <p>
-                Handles server-side logic and database management with languages
-                like Python and Node.js.
-              </p>
-            </div>
-            <div>
-              <h1>Full-Stack Developers</h1>
-              <p>
-                Versatile developers who manage both front-end and back-end
-                tasks.
-              </p>
-            </div>
-          </main>
-          <main>
-            <div>
-              <h1>Mobile Developers</h1>
-              <p>
-                Builds applications for iOS and Android using Swift, Kotlin, or
-                Flutter
-              </p>
-            </div>
-            <div>
-              <h1>UI/UX Designers</h1>
-              <p>
-                Optimizes the user experience and design of applications and
-                websites.
-              </p>
-            </div>
-            <div>
-              <h1>and many more...</h1>
-              <p>
-                We have all kinds of developers ready and on-demand, equipped to
-                meet any of your project needs promptly
-              </p>
-            </div>
-          </main>
-        </article>
+        <div className='roles'>
+          <h1>Essential Roles Sourced Globally</h1>
+          <p>
+            We work with businesses of all sizes, from startups to large
+            corporations, across various industries.
+          </p>
+        </div>
+          <article className='roles-container'>
+            <main className='role-slides'>
+              <div className='role-info'>
+                <h1>Frontend Developers</h1>
+                <p>
+                  Developing the user interface, interactions and connecting with
+                  the backend with langugaes like React, HTML/CSS, etc
+                </p>
+              </div>
+              <div className='role-info'>
+                <h1>Backend Developers</h1>
+                <p>
+                  Handles server-side logic and database management with languages
+                  like Python and Node.js.
+                </p>
+              </div>
+              <div className='role-info'>
+                <h1>Full-Stack Developers</h1>
+                <p>
+                  Versatile developers who manage both front-end and back-end
+                  tasks.
+                </p>
+              </div>
+            </main>
+            <main className='role-slides'>
+              <div className='role-info'>
+                <h1>Mobile Developers</h1>
+                <p>
+                  Builds applications for iOS and Android using Swift, Kotlin, or
+                  Flutter
+                </p>
+              </div>
+              <div className='role-info'>
+                <h1>UI/UX Designers</h1>
+                <p>
+                  Optimizes the user experience and design of applications and
+                  websites.
+                </p>
+              </div>
+              <div className='role-info'>
+                <h1>and many more...</h1>
+                <p>
+                  We have all kinds of developers ready and on-demand, equipped to
+                  meet any of your project needs promptly
+                </p>
+              </div>
+            </main>
+          </article>
       </main>
     </>
   )

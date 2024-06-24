@@ -1,3 +1,7 @@
+
+@import url('https://db.onlinewebfonts.com/c/6d4c9315edad6d3ac4004ba4ae456a21?family=Plus+Jakarta+Sans');
+@import url('https://db.onlinewebfonts.com/c/6988694c95d037f35e9a8deef53179b3?family=Recoleta+Black');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +16,10 @@ a{
   color: #fff;
   padding: 12px 24px;
   border-radius: 10px;
+  font-family: 'Recoleta Black', sans-serif;
+
+}
+
+li{
+  list-style: none;
 }

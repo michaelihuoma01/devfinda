@@ -8,6 +8,17 @@
   margin-bottom: 30px;
 }
 
+.about-info h1 {
+  font-family: 'Recoleta Black', sans-serif;
+  font-size: 28px;
+}
+
+.about-info p {
+  color: #52525b;
+  font-size: 18px;
+  font-family: 'Plus Jakarta Sans';
+}
+
 .slides-container {
   display: flex;
   align-items: center;
@@ -19,18 +30,20 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  max-width: 322px;
+  /* max-width: 322px; */
   border-radius: 26px;
 }
 
 .slides h1 {
   font-size: 26px;
   margin-bottom: 16px;
+  font-family: 'Recoleta Black', sans-serif;
 }
 
 .slides p {
   font-size: 18px;
   margin-bottom: 28px;
+  font-family: 'Plus Jakarta Sans';
 }
 
 .slide-1 {
@@ -57,6 +70,7 @@
   display: grid;
   place-items: center;
   font-size: 28px;
+  font-family: 'Recoleta Black', sans-serif;
 }
 
 .guides {
@@ -69,31 +83,77 @@
 guide-box {
   /* width: 382px; */
   padding: 30px;
+  border: 1px solid #000;
   border-radius: 20px;
-  box-shadow: 0 0.7961918735236395px 2.3885756205709185px -0.625px #0000000d,
-    0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d,
-    0 6.382653521484461px 19.147960564453385px -1.875px #0000000d,
-    0 20px 60px -2.5px #0000000d;
+  /* background-color: red; */
+  /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
-.guide-box p{
- font-size: 18px;
- color: #52525b;
- max-width: 322px;
+.guide-box p {
+  font-size: 18px;
+  color: #52525b;
+  max-width: 322px;
+  font-family: 'Plus Jakarta Sans';
 }
 
-.roles{
- display: grid;
- place-items: center;
- padding: 81px 0;
+.roles {
+  display: grid;
+  place-items: center;
+  padding: 81px 0;
 }
 
-.roles h1{
- font-size: 28px;
- margin-bottom: 16px;
+.roles h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-family: 'Recoleta Black', sans-serif;
 }
 
 .roles p {
- font-size: 18px;
- color: #52525b;
+  font-size: 18px;
+  color: #52525b;
+  font-family: "Plus Jakarta Sans";
+}
+
+.roles-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.role-slides {
+  width: 100%;
+  background-color: #3558e6;
+  padding: 44px;
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.role-info {
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 8px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 12px 20px;
+  position: relative;
+}
+
+.role-info h1 {
+  font-size: 22px;
+  font-family: 'Recoleta Black', sans-serif;
+}
+
+.role-info p {
+  font-size: 18px;
+  color: #52525b;
+  max-width: 372px;
+  font-family: "Plus Jakarta Sans";
 }

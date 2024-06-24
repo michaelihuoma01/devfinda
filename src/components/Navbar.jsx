@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import '../styles/Navbar.css'
-import Hiring from '../UI/Hiring'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,7 +23,7 @@ export default function Navbar() {
         <a href='#pricing'>Pricing</a>
         <a href='#testimonials'>Testimonials</a>
         <a href='#faqs'>FAQs</a>
-        <Hiring />
+        <Link className='hiring-btn'>Start Hiring</Link>
       </div>
     </nav>
   )
