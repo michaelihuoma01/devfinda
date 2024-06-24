@@ -1,7 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import '../styles/Faq.css'
+import { faqAnimation } from '../util/animation'
 
 const FAQ = () => {
+    useEffect(() => {
+      faqAnimation()
+    })
   const [selectedQuestion, setSelectedQuestion] = useState(null)
 
   const toggleQuestion = (index) => {
@@ -42,9 +46,11 @@ const FAQ = () => {
     },
   ]
 
+
+
   return (
-    <section className='faq-section'>
-      <h1>Frequently Asked Questions</h1>
+    <section id='faqs' className='faq-section'>
+      <h1 className='faq-header'>Frequently Asked Questions</h1>
       <div className='faq-container'>
         {faqs.map((faq, index) => (
           <div key={index} className='faq-item'>

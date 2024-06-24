@@ -1,10 +1,26 @@
+
+
 .navbar {
-  position: relative;
-  padding: 16px 32px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  transition: top 0.3s;
+  padding: 16px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #eceaea ;
+  border-bottom: 2px solid #eceaea;
+  margin-bottom: 32px;
+}
+
+.navbar.show {
+  top: 0;
+}
+
+.navbar.hide {
+  top: -100px; 
 }
 
 .brand {
@@ -56,7 +72,8 @@
 
 .menu.open {
   display: flex;
-  max-height: 533px; 
+  max-height: 533px;
+  z-index: 2;
 }
 
 .menu a:not(:last-child) {
@@ -65,7 +82,6 @@
   text-decoration: none;
   text-align: center;
 }
-
 
 @media (max-width: 768px) {
   .menu {

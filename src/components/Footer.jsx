@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/Footer.css'
 import { Link } from 'react-router-dom'
+import techies from '/images/techies.jpg'
+import { footerAnimation } from '../util/animation'
 
 const date = new Date()
 const year = date.getFullYear()
 
 export default function Footer() {
+  useEffect(()=>{
+    footerAnimation()
+  })
   return (
     <>
       <footer>
         <div className='footer-info'>
-          <img src='' alt='' />
+          <img src={techies} alt='' className='techiesImg'/>
           <div className='details'>
             <h1>Take Your Tech Talents Worldwide!</h1>
             <p>

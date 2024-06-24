@@ -21,7 +21,6 @@
   font-size: 28px;
   color: #fff;
   font-family: 'Recoleta Black', sans-serif;
-
 }
 
 .pricing {
@@ -39,13 +38,12 @@
   font-size: 26px;
   align-self: center;
   font-family: 'Recoleta Black', sans-serif;
-
 }
 
 .pricing-list {
   font-size: 14px;
   color: #52525b;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
 }
 
 .hire-btn {
@@ -56,7 +54,6 @@
   text-align: center;
   font-size: 16px;
   font-family: 'Recoleta Black', sans-serif;
-
 }
 
 .hire-btn:hover {
@@ -72,6 +69,7 @@
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-bottom: 50px;
 }
 
 .call-info {
@@ -83,7 +81,6 @@
 .call-info h1 {
   font-size: 28px;
   font-family: 'Recoleta Black', sans-serif;
-
 }
 
 .call-list {
@@ -93,7 +90,11 @@
   font-size: 18px;
   color: #52525b;
   max-width: 342px;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
+}
+.call-list li {
+  display: flex;
+  align-items: center;
 }
 
 .call-links {
@@ -110,7 +111,6 @@
   text-align: center;
   font-size: 16px;
   font-family: 'Recoleta Black', sans-serif;
-
 }
 
 .schedule:hover {
@@ -125,7 +125,6 @@
   text-align: center;
   font-size: 16px;
   font-family: 'Recoleta Black', sans-serif;
-
 }
 
 .send-mail:hover {
@@ -133,6 +132,72 @@
   color: #fff;
 }
 
+.callImg {
+  width: 302px;
+  height: 334px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.orgs {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.orgs:before,
+.orgs:after {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  content: '';
+  z-index: 2;
+}
+.orgs:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+.orgs:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+.orgs img {
+  margin: 0 60px;
+}
+
+.org-slide {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 15s slide infinite linear;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.bI {
+  width: 200px;
+}
+
+.tc {
+  width: 76px;
+}
+
+.yahoo {
+  width: 102px;
+}
+
+.greenhouse {
+  width: 134px;
+}
+
+.nyt {
+  width: 174px;
+}
 .clients-section {
   display: flex;
   flex-direction: column;
@@ -149,25 +214,49 @@
   align-self: center;
   font-size: 28px;
   font-family: 'Recoleta Black', sans-serif;
+}
+
+ .rem-slides {
+  overflow: hidden;
+  width: 1300px;
 
 }
 
-.client-slides {
+.clients-slides {
   display: flex;
-  gap: 26px;
+  width: calc(100% * 3);
+  animation: slide 50s infinite;
 }
 
 .client-slide {
+  /* flex: 0 0 calc(100% / 7);  */
+
+  box-sizing: border-box;
   padding: 32px;
-  display: flex;
+  margin: 0 20px ;
+  border-radius: 26px;
+   display: flex;
   flex-direction: column;
   gap: 48px;
-  border-radius: 26px;
+
 }
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
+}
+
+
 
 .client-slide p {
   font-size: 18px;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 500;
+  line-height: 30px;
 }
 
 .client-info {
@@ -178,14 +267,14 @@
 
 .client-info h1 {
   font-size: 18px;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
 }
 
 .client-info h2 {
   font-size: 16px;
   color: #52525b;
   font-weight: 100;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
 }
 
 .cslide-1 {
@@ -200,30 +289,30 @@
   background-color: #111928;
 }
 
-.cslide-1 p{
- color: #40538b;
+.cslide-1 p {
+  color: #40538b;
 }
 
-.cslide-1 h1{
- color: #233876;
+.cslide-1 h1 {
+  color: #233876;
 }
 
-.cslide-2 p{
- color: #40538b;
+.cslide-2 p {
+  color: #40538b;
 }
 
-.cslide-2 h1{
- color: #233876;
+.cslide-2 h1 {
+  color: #233876;
 }
 
-.cslide-3 p{
- color: #fff;
+.cslide-3 p {
+  color: #fff;
 }
 
-.cslide-3{
- color: #fff;
+.cslide-3 {
+  color: #fff;
 }
 
-.cslide-3 h2{
-color: #b3b3b4;
+.cslide-3 h2 {
+  color: #b3b3b4;
 }
