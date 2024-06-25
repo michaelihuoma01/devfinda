@@ -49,14 +49,14 @@ export default function Footer() {
                   <img src={facebook} alt='' />
                 </Link>
                 <Link className='social-link'>
-                  <img src={twitter} alt="" />
+                  <img src={twitter} alt='' />
                 </Link>
 
                 <Link className='social-link'>
                   <img src={instagram} alt='' />
                 </Link>
                 <Link className='social-link'>
-                  <img src={youtube} alt="" />
+                  <img src={youtube} alt='' />
                 </Link>
               </ul>
             </div>
@@ -68,13 +68,16 @@ export default function Footer() {
               <li>Pricing</li>
               <li>FAQs</li>
             </ul>
-            <div className='contact'>
+            <Link className='contact'>
               <h1>Contact</h1>
               <div className='mail'>
-                <img src='' alt='' />
+                <i
+                  class='fa-regular fa-envelope'
+                  style={{ color: '#ffffff' }}
+                ></i>
                 <p>hello@devfinda.com</p>
               </div>
-            </div>
+            </Link>
           </article>
         </main>
         <p className='copyright'>Copyright &copy; {year}</p>

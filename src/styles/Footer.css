@@ -92,6 +92,14 @@ footer {
   color: #ffffff;
 }
 
+.mail{
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
 .social-link:hover {
   background-color: #3558e6;
 }

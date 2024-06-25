@@ -16,9 +16,7 @@ export function homeAnimation() {
     { x: 0, opacity: 1, ease: 'power3.out', duration: 2 }
   )
 
-  gsap.from('.home-info article:first-child', {
-    opacity: 0,
-  })
+  gsap.set('.home-info article', { opacity: 0 })
 
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -33,6 +31,7 @@ export function homeAnimation() {
     { y: -100, opacity: 0 },
     { y: 0, opacity: 1, ease: 'power3.out', duration: 2 }
   )
+
   tl.fromTo(
     '.home-info article:last-child',
     { y: 100, opacity: 0 },
