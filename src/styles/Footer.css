@@ -69,6 +69,21 @@ footer {
   margin: 10% 0 0 0;
 }
 
+.footer-logo-container {
+  max-width: 150px; 
+  aspect-ratio: 16 / 3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .socials {
   display: flex;
   align-items: center;
@@ -194,9 +209,14 @@ footer {
 
   .copyright {
     padding-left: 20px;
+  padding-bottom: 50px;
+   
   }
 
   .footer-main {
     padding: 120px 20px 100px;
+  }
+  .footer-details{
+    gap: 60px;
   }
 }

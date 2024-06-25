@@ -6,6 +6,7 @@ import homeImg from '/images/homeImg.jpg'
 import laptopUser1 from '/images/laptop1.jpg'
 import laptopUser2 from '/images/laptop2.jpg'
 import jay from '/images/jay.jpg'
+import alan from '/images/profile2.jpg'
 import { homeAnimation } from '../util/animation'
 
 export default function Home() {
@@ -64,7 +65,8 @@ export default function Home() {
             </div>
             <div>
               <div className='profile-container profile1'>
-                <img src={jay} alt='' className='profile' />
+                <img src={alan} alt='' className='profile' />
+
                 <div>
                   <span className='quote'>"</span>
                   <h4>
@@ -76,6 +78,7 @@ export default function Home() {
               </div>
               <div className='profile-container'>
                 <img src={jay} alt='' className='profile' />
+
                 <div>
                   <span className='quote'>"</span>
                   <h4>

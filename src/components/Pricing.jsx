@@ -6,7 +6,10 @@ import greenhouse from '/images/greenhouse.png'
 import nyt from '/images/nyt.png'
 import tc from '/images/tc.png'
 import yahoo from '/images/yahoo.png'
-import wired from '/images/wired.png'
+import user1 from '/images/user1.jpg'
+import user2 from '/images/user2.jpg'
+import user3 from '/images/user3.jpg'
+
 import bI from '/images/bI.png'
 import { pricingAnimation } from '../util/animation'
 
@@ -102,7 +105,7 @@ export default function Pricing() {
                 integrating them smoothly.
               </p>
               <div className='client-info'>
-                <img src='' alt='' />
+                <img src={user1} alt='' />
                 <h1>Fredric Alexander</h1>
                 <h2>Fusion Enterprises LLC</h2>
               </div>
@@ -114,7 +117,7 @@ export default function Pricing() {
                 everyone is synchronized and productive.
               </p>
               <div className='client-info'>
-                <img src='' alt='' />
+                <img src={user2} alt='' />
                 <h1>Marcus Greene</h1>
                 <h2>Startup Founder</h2>
               </div>
@@ -126,7 +129,7 @@ export default function Pricing() {
                 like team members from day one.
               </p>
               <div className='client-info'>
-                <img src='' alt='' />
+                <img src={user3} alt='' />
                 <h1>James Rodriguez</h1>
                 <h2>Founder, TechSolutions</h2>
               </div>
@@ -138,7 +141,7 @@ export default function Pricing() {
                 integrating them smoothly.
               </p>
               <div className='client-info'>
-                <img src='' alt='' />
+                <img src={user1} alt='' />
                 <h1>Fredric Alexander</h1>
                 <h2>Fusion Enterprises LLC</h2>
               </div>
@@ -150,7 +153,7 @@ export default function Pricing() {
                 everyone is synchronized and productive.
               </p>
               <div className='client-info'>
-                <img src='' alt='' />
+                <img src={user2} alt='' />
                 <h1>Marcus Greene</h1>
                 <h2>Startup Founder</h2>
               </div>
@@ -162,7 +165,7 @@ export default function Pricing() {
                 like team members from day one.
               </p>
               <div className='client-info'>
-                <img src='' alt='' />
+                <img src={user3} alt='' />
                 <h1>James Rodriguez</h1>
                 <h2>Founder, TechSolutions</h2>
               </div>

@@ -34,14 +34,14 @@ export default function Footer() {
         <main className='footer-main'>
           <article className='footer-details'>
             <div className='social-container'>
-              <div className='video-logo-container'>
+              <div className='footer-logo-container'>
                 <video
                   src={logo}
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className='video-logo'
+                  className='footer-logo'
                 />
               </div>
               <ul className='socials'>
