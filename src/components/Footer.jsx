@@ -82,6 +82,7 @@ export default function Footer() {
         </main>
         <p className='copyright'>Copyright &copy; {year}</p>
       </footer>
+     
     </>
   )
 }

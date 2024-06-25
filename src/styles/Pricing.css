@@ -223,34 +223,30 @@
 }
 
 .rem-slides {
+  position: relative;
   overflow: hidden;
-  /* width: 1300px; */
+  width: 100%;
+  height: auto;
 }
 
 .clients-slides {
   display: flex;
-  width: calc(100% * 3);
-  animation: slide 50s infinite;
+  gap: 20px;
+  width: max-content; 
+  animation: scrollSlides 30s linear infinite;
 }
 
 .client-slide {
-  /* flex: 0 0 calc(100% / 7);  */
-  box-sizing: border-box;
   padding: 32px;
-  margin: 0 20px;
   border-radius: 26px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
+  width: 600px; 
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.cslide-1, .cslide-2, .cslide-3 {
+  flex: 0 0 auto; 
 }
 
 .client-slide p {
@@ -370,42 +366,8 @@
     padding: 56px 32px 0px;
   }
 
-  /* .clients-slides {
-    display: flex;
-    width: 100%;
-    animation: slide 2s linear infinite;
-  } */
-   /* .clients-slides {
-  display: flex;
-  width: calc(100% * 3);
-  animation: slide 50s infinite;
-} */
 
 
-  .client-slide {
-    /* flex: 0 0 20%; */
-  flex: 0 0 calc(100% / 9); 
-
-    width: 100%;
-    box-sizing: border-box;
-    padding: 32px;
-    margin: 0 auto;
-    border-radius: 26px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    margin: 0 10px;
-  }
-  /* 
-
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  } */
 }
 
 @media screen and (max-width: 500px) {
@@ -417,40 +379,25 @@
     margin-top: 30px;
   }
 
-
-   .rem-slides {
-    width: 100%;
-  }
-
   .call-list{
     width: 312px;
   }
-  .clients-slides {
-    display: flex;
-    width: 100%;
-    animation: slide 25s infinite;
-  }
+
   .clients-section {
     padding: 56px 20px 0px;
   }
-  .client-slide {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    padding: 32px;
-    margin: 0 auto;
-    border-radius: 26px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    margin: 0 10px;
+  .client-slide{
+    width: 335px;
   }
 
-  @keyframes slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  } 
+}
+
+
+@keyframes scrollSlides {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(-50%); 
+  }
 }

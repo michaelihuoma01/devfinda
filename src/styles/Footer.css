@@ -162,6 +162,8 @@ footer {
   padding-bottom: 30px;
 }
 
+
+
 @media screen and (max-width: 768px) {
   .footer-info {
     left: 0;

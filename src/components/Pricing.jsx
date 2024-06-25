@@ -93,7 +93,7 @@ export default function Pricing() {
           </div>
         </div>
         <div className='client-text'>
-          <h1 >Happy Clients</h1>
+          <h1>Happy Clients</h1>
           <p>Beautiful work from clients I've worked with</p>
         </div>
         <article className='rem-slides'>
