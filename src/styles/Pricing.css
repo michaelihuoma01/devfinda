@@ -12,7 +12,7 @@
 .pricing-container h1 {
   font-size: 28px;
   color: #fff;
-  font-family: 'Recoleta Black', sans-serif;
+  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
 }
 
 .pricing {
@@ -29,13 +29,13 @@
 .pricing h2 {
   font-size: 26px;
   align-self: center;
-  font-family: 'Recoleta Black', sans-serif;
+  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
 }
 
 .pricing-list {
   font-size: 14px;
   color: #52525b;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .hire-btn {
@@ -45,7 +45,7 @@
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-family: 'Recoleta Black', sans-serif;
+  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
 }
 
 .hire-btn:hover {
@@ -72,7 +72,7 @@
 
 .call-info h1 {
   font-size: 28px;
-  font-family: 'Recoleta Black', sans-serif;
+  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
 }
 
 .call-list {
@@ -82,7 +82,7 @@
   font-size: 18px;
   color: #000;
   max-width: 342px;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 .call-list li {
   display: flex;
@@ -102,7 +102,7 @@
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-family: 'Recoleta Black', sans-serif;
+  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
 }
 
 .schedule:hover {
@@ -116,7 +116,7 @@
   color: #000;
   text-align: center;
   font-size: 16px;
-  font-family: 'Recoleta Black', sans-serif;
+  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
 }
 
 .send-mail:hover {
@@ -211,14 +211,14 @@
 .client-text h1{
   align-self: center;
   font-size: 28px;
-  font-family: 'Recoleta Black', sans-serif;
+   font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
   margin-bottom: 16px;
 }
 
 .client-text p{
   font-size: 18px;
   color: #52525b;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 
 }
 
@@ -251,7 +251,7 @@
 
 .client-slide p {
   font-size: 18px;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
   font-weight: 500;
   line-height: 30px;
 }
@@ -270,14 +270,14 @@
 
 .client-info h1 {
   font-size: 18px;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .client-info h2 {
   font-size: 16px;
   color: #52525b;
   font-weight: 100;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .cslide-1 {

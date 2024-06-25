@@ -33,14 +33,15 @@ footer {
 .details h1 {
   font-size: 38px;
   color: #fff;
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
+  font-weight: bold;
   width: 400px;
 }
 
 .details p {
   font-size: 18px;
   color: #fff;
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
   max-width: 600px;
 }
 
@@ -52,7 +53,7 @@ footer {
   text-align: center;
   font-size: 16px;
   width: 150px;
-  font-family: 'Recoleta Black', sans-serif;
+  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
   margin-top: 16px;
 }
 
@@ -70,7 +71,7 @@ footer {
 }
 
 .footer-logo-container {
-  max-width: 150px; 
+  max-width: 150px;
   aspect-ratio: 16 / 3;
   overflow: hidden;
   display: flex;
@@ -91,7 +92,7 @@ footer {
   margin-top: 32px;
 }
 .social-container h1 {
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .social-link {
@@ -107,12 +108,11 @@ footer {
   color: #ffffff;
 }
 
-.mail{
+.mail {
   margin-top: 16px;
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
 .social-link:hover {
@@ -128,41 +128,39 @@ footer {
 .company h1 {
   font-size: 18px;
   color: #fff;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .company li {
   font-size: 14px;
   color: #b0b0bd;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 .contact h1 {
   font-size: 18px;
   color: #fff;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .contact li {
   font-size: 14px;
   color: #b0b0bd;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .mail p {
   font-size: 14px;
   color: #b0b0bd;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .copyright {
   font-size: 16px;
   color: #858585;
-  font-family: 'Plus Jakarta Sans';
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
   padding-left: 32px;
   padding-bottom: 30px;
 }
-
-
 
 @media screen and (max-width: 768px) {
   .footer-info {
@@ -211,14 +209,13 @@ footer {
 
   .copyright {
     padding-left: 20px;
-  padding-bottom: 50px;
-   
+    padding-bottom: 50px;
   }
 
   .footer-main {
     padding: 120px 20px 100px;
   }
-  .footer-details{
+  .footer-details {
     gap: 60px;
   }
 }

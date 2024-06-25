@@ -29,7 +29,7 @@ export function homeAnimation() {
   tl.fromTo(
     '.home-info article:first-child',
     { y: -100, opacity: 0 },
-    { y: 0, opacity: 1, ease: 'power3.out', duration: 2 }
+    { y: 0, opacity: 1, ease: 'power3.out', duration: 1 }
   )
 
   tl.fromTo(

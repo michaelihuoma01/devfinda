@@ -42,7 +42,7 @@
 .brand {
   color: #5271fe;
   margin: 0;
-  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .menu-icon {
@@ -83,7 +83,7 @@
   transition: max-height 1s ease-out;
   overflow: hidden;
   max-height: 0;
-  font-family: "Plus Jakarta Sans";
+  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .menu.open {
@@ -116,7 +116,7 @@
   padding: 20px;
 }
 .video-logo-container {
-  max-width: 100px; 
+  max-width: 120px; 
 }
 
 .bar{
