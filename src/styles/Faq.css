@@ -4,9 +4,9 @@
   justify-content: space-between;
   margin-bottom: 450px;
 }
-.faq-section h1{
+.faq-section h1 {
   font-family: 'Recoleta Black', sans-serif;
-font-size: 28px;
+  font-size: 28px;
 }
 
 .faq-container {
@@ -28,11 +28,10 @@ font-size: 28px;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
-.faq-question h3{
+.faq-question h3 {
   max-width: 70%;
   font-size: 22px;
-font-family: "Plus Jakarta Sans";
-
+  font-family: 'Plus Jakarta Sans';
 }
 
 .faq-question h3 {
@@ -45,10 +44,10 @@ font-family: "Plus Jakarta Sans";
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; 
-  height: 40px; 
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: transparent;
+   background-color: #3558e6; 
   transition: background-color 0.3s ease;
   padding: 16px;
 }
@@ -56,7 +55,7 @@ font-family: "Plus Jakarta Sans";
 .arrow {
   width: 8px;
   height: 8px;
-  border: solid black;
+  border: solid #fff;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 2px;
@@ -72,13 +71,13 @@ font-family: "Plus Jakarta Sans";
   transform: rotate(-135deg);
 }
 
-.faq-question.clicked .arrow-container {
+/* .faq-question.clicked .arrow-container {
   background-color: #3558e6;
 }
 
 .faq-question.clicked .arrow {
   border-color: white;
-}
+} */
 
 .faq-answer {
   font-size: 18px;
@@ -91,7 +90,7 @@ font-family: "Plus Jakarta Sans";
   margin-left: 10px;
   max-width: 80%;
   line-height: 30px;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
 }
 
 .faq-answer.open {
@@ -106,39 +105,44 @@ font-family: "Plus Jakarta Sans";
   margin-left: 10px;
 }
 
-
 @media screen and (max-width: 1000px) {
-.faq-section{
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 300px;
-}
-.faq-section h1{
-margin-bottom: 40px;
-text-align: center;
+  .faq-section {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+  }
+  .faq-section h1 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .faq-container {
+    width: 100%;
+  }
 }
 
-.faq-container{
-  width: 100%;
-}
-}
+@media screen and (max-width: 500px) {
+  .faq-section {
+    margin: 42px 10px 450px 5px;
+    width: 100%;
+  }
 
-@media screen and (max-width: 500px){
+  .faq-question h3 {
+    font-size: 18px;
+  }
 
-.faq-section{
-  margin: 42px 10px 450px 5px;
-}
+  .faq-section h1 {
+    font-size: 24px;
+  }
 
+  .faq-answer {
+    width: 70%;
+  }
 
-.faq-section h1{
-  font-size: 20px;
-}
-
-.faq-answer{
-  width: 70%;
-}
-
-.faq-answer.open{
-  max-height: 400px;
-}
+ .faq-item .faq-line{
+    width: 70%;
+  }
+  .faq-answer.open {
+    max-height: 400px;
+  }
 }

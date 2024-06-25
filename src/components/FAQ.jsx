@@ -46,8 +46,6 @@ const FAQ = () => {
     },
   ]
 
-
-
   return (
     <section id='faqs' className='faq-section'>
       <h1 className='faq-header'>Frequently  <br /> Asked Questions</h1>

@@ -248,13 +248,16 @@ gap: 40px;
 
 .lpt1{
   max-height: 214px;
+  border-radius: 30px;
+
 }
 .profile1{
   margin-bottom: 20px;
 }
 
-.lpt1{
-  border-radius: 30px;
+.lpt2{
+  max-height: 214px;
+
 }
 
 .home-info h4{

@@ -225,7 +225,7 @@
     margin: 0 20px;
   }
   .about-info h1 {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
   }
 
@@ -236,6 +236,7 @@
     width: 100%;
   }
 .guide h1{
+  font-size: 24px;
   margin-bottom: 37px;
 }
   .slides-container {
@@ -256,6 +257,7 @@
 
   .role-info p{
     line-height: 25px;
+    font-size: 16px;
   }
 
   .slideImg3 {
