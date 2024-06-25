@@ -13,11 +13,11 @@ export function homeAnimation() {
   gsap.fromTo(
     '.homeImg',
     { x: 100, opacity: 0 },
-    { x: 0, opacity: 1, ease: 'power3.out', duration: 1 }
+    { x: 0, opacity: 1, ease: 'power3.out', duration: 2 }
   )
 
-  gsap.from('.home-info article:first-child',{
-    opacity: 0
+  gsap.from('.home-info article:first-child', {
+    opacity: 0,
   })
 
   const tl = gsap.timeline({
@@ -31,7 +31,7 @@ export function homeAnimation() {
   tl.fromTo(
     '.home-info article:first-child',
     { y: -100, opacity: 0 },
-    { y: 0, opacity: 1, ease: 'power3.out', duration: 1,}
+    { y: 0, opacity: 1, ease: 'power3.out', duration: 2 }
   )
   tl.fromTo(
     '.home-info article:last-child',
@@ -174,7 +174,7 @@ export function pricingAnimation() {
   )
 
   tl.fromTo(
-    ['.call-links', '.callImg'],
+    ['.call-links'],
     { y: 50, opacity: 0 },
     { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
     '-=0.5'
@@ -183,7 +183,7 @@ export function pricingAnimation() {
   tl.fromTo(
     '.callImg',
     { x: 100, opacity: 0 },
-    { x: 0, opacity: 1, duration: 1, ease: 'power3.out'},
+    { x: 0, opacity: 1, duration: 2, ease: 'power3.out' },
     '-=1'
   )
 
@@ -243,37 +243,37 @@ export function faqAnimation() {
 }
 
 export function footerAnimation() {
-gsap.fromTo(
-  '.techiesImg',
-  { y: 100, opacity: 0 },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 0.5,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: '.footer-info',
-      start: 'top bottom',
-      toggleActions: 'play none none none',
-      once: true,
-    },
-  }
-)
+  gsap.fromTo(
+    '.techiesImg',
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 0.5,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: '.footer-info',
+        start: 'top bottom',
+        toggleActions: 'play none none none',
+        once: true,
+      },
+    }
+  )
 
-gsap.fromTo(
-  '.details',
-  { y: 100, opacity: 0 },
-  {
-    y: 0,
-    opacity: 1,
-    duration: 1,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: '.footer-info',
-      start: 'top bottom',
-      toggleActions: 'play none none none',
-      once: true,
-    },
-  }
-)
+  gsap.fromTo(
+    '.details',
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: '.footer-info',
+        start: 'top bottom',
+        toggleActions: 'play none none none',
+        once: true,
+      },
+    }
+  )
 }

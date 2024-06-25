@@ -27,7 +27,6 @@
   justify-content: space-between;
   gap: 32px;
   margin-bottom: 150px;
-
 }
 
 .slides {
@@ -65,20 +64,26 @@
   background-color: #3558e6;
   color: #fff;
 }
-.slideImg1{
+.slideImg1 {
   width: 252px;
   align-self: flex-end;
 }
-.slideImg3{
-width: 215px;
-align-self: center;
+.slideImg2 {
+  width: 252px;
+  margin-bottom: 16px;
+  align-self: center;
+
+}
+.slideImg3 {
+  width: 273px;
+  align-self: center;
 }
 
 .guide {
   margin: 10px 50px;
 }
 
-.guideImg{
+.guideImg {
   width: 60px;
 }
 .guide h1 {
@@ -128,7 +133,7 @@ align-self: center;
 .roles p {
   font-size: 18px;
   color: #52525b;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
   max-width: 650px;
   text-align: center;
   line-height: 30px;
@@ -174,58 +179,91 @@ align-self: center;
 .role-info p {
   font-size: 18px;
   color: #52525b;
-  font-family: "Plus Jakarta Sans";
+  font-family: 'Plus Jakarta Sans';
 }
 
-@media screen and (max-width: 768px){
-.slides-container{
-  flex-direction: column;
-}
-.slideImg1,.slideImg3{
-  width: 50%;
-}
-.guides{
-  grid-template-columns: 1fr ;
-place-items: center;
+@media screen and (max-width: 1000px) {
+  .slides-container {
+    flex-direction: column;
+  }
+
+  .slideImg1,
+  /* .slideImg2, */
+  .slideImg3 {
+    width: 50%;
+  }
+  .guides {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .guide-box {
+    width: 100%;
+  }
+  .roles {
+    padding: 41px 0;
+  }
+
+  .roles h1 {
+    font-size: 22px;
+  }
+  .roles-container {
+    flex-direction: column;
+  }
+
+  .role-slides {
+    padding: 44px 20px;
+  }
 }
 
-.guide-box{
-  width: 100%;
+@media screen and (max-width: 500px) {
+  .about {
+    margin: 100px 0px;
+  }
+
+  .about-info {
+    margin: 0 20px;
+  }
+  .about-info h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .guide{
+    margin: 0 37px;
+  }
+  .guide-box {
+    width: 100%;
+  }
+.guide h1{
+  margin-bottom: 37px;
 }
+  .slides-container {
+    margin: 80px 20px;
+  }
 .roles{
-  padding: 41px 0;
+  padding: 36px 20px;
 }
+  .roles h1 {
+    padding-top: 30px;
+    font-size: 24px;
+    text-align: center;
+  }
 
-.roles h1 {
-font-size: 22px;
+  .roles-container{
+    margin: 0 20px;
+  }
 
-}
-.roles-container {
-flex-direction: column;
+  .role-info p{
+    line-height: 25px;
+  }
 
-}
+  .slideImg3 {
+    width: 273px;
+  }
 
-.role-slides{
-  padding: 44px 20px;
-}
-}
+  .slides h1{
+    font-size: 20px;
+  }
 
-@media screen and (max-width: 400px){
-.guide-box{
-  width: 100%;
-}
-.about{
-  margin: 100px 20px;
-
-}
-
-.slides-container{
-  margin: 0 20px;
-}
-
-.roles h1{
-  padding-top: 30px;
-  font-size: 24px;
-  text-align: center;
-}
 }

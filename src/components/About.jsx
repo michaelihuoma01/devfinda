@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import '../styles/About.css'
 import slideImg1 from '/images/slide1.png'
+import slideImg2 from '/images/slide2.png'
 import slideImg3 from '/images/slide3.svg'
 import cusService from '/images/customer-service.png'
 import searching from '/images/searching.png'
@@ -35,7 +36,7 @@ export default function About() {
             <img src={slideImg1} alt='' className='slideImg1' />
           </article>
           <article className='slides slide-2'>
-            <img src='' alt='' />
+            <img src={slideImg2} alt=''  className='slideImg2'/>
             <h1>Rigorous Vetting, Quality Talent</h1>
             <p>
               Reduce hiring risks with our detailed screening, ensuring only the

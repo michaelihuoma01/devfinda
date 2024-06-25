@@ -89,7 +89,10 @@ export default function Pricing() {
             <img src={nyt} alt='' className='nyt' />
           </div>
         </div>
-        <h1 className='client-text'>Happy Clients</h1>
+        <div className='client-text'>
+          <h1 >Happy Clients</h1>
+          <p>Beautiful work from clients I've worked with</p>
+        </div>
         <article className='rem-slides'>
           <div className='clients-slides'>
             <div className='client-slide cslide-1'>

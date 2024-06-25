@@ -22,6 +22,7 @@
 .expand h1 {
   font-size: 46px;
   font-family: 'Recoleta Black', sans-serif;
+  line-height: 55px;
 }
 
 .expand p {
@@ -29,6 +30,7 @@
   font-size: 18px;
   width: 512px;
   font-family: 'Plus Jakarta Sans';
+  line-height: 30px;
 }
 .main-info {
   display: grid;
@@ -79,7 +81,8 @@
 }
 
 .s-btn {
-  width: 150px;
+  width: 222px;
+  text-align: center;
 }
 
 .s-btn:hover{
@@ -104,14 +107,13 @@ margin-top: 20px;
 .asterik {
   color: #ff1265;
   font-size: 25px;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .home-info h3 {
   font-size: 18px;
   color: #000;
   font-family: 'Plus Jakarta Sans';
-  margin-left: 10px;
 }
 .quote {
   color: #ff1265;
@@ -147,7 +149,7 @@ margin-top: 20px;
   object-fit: cover;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
  .expand-container {
     flex-direction: column;
     align-items: center;
@@ -174,6 +176,7 @@ margin-top: 20px;
 
   .homeImg {
     width: 100%;
+    height: 100%;
     order: -1; 
     margin-bottom: 20px; 
   }
@@ -202,10 +205,24 @@ margin-top: 20px;
 }
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
+.expand-container{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 
+.expand{
+  gap: 18px;
+}
+.expand h1{
+  line-height: 40px;
+}
+.expand p{
+  line-height: 29px;
+}
 .homeImg{
-  border-radius: 26px;
+  height: 260px;
+  border-radius: 32px;
 }
 
 .home-info{
@@ -213,14 +230,47 @@ margin-top: 20px;
 gap: 40px;
 }
 
+.home-info h3{
+  line-height: 30px;
+}
+
 .info1{
   margin-top: 30px;
+}
+
+.info1 p{
+  line-height: 30px;
+}
+
+.article-content{
+  padding: 0 20px 23px;
 }
 
 .lpt1{
   max-height: 214px;
 }
 .profile1{
+  margin-bottom: 20px;
+}
+
+.lpt1{
+  border-radius: 30px;
+}
+
+.home-info h4{
+  line-height: 20px;
+}
+.flex-ar{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-ar img{
+  order: 1;
+}
+
+.flex-ar div{
+  order: -1;
   margin-bottom: 20px;
 }
 }

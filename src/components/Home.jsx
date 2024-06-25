@@ -18,7 +18,7 @@ export default function Home() {
         <div className='expand'>
           <h1>
             Expand Your Team, <br />
-            Not Your Budget
+            Not Your Budget.
           </h1>
           <p>
             Hire world-class tech talent overseas at a fraction of the cost of
@@ -30,7 +30,7 @@ export default function Home() {
       </section>
       <div className='main-info'>
         <main className='home-info'>
-          <article>
+          <article className='article-content'>
             <div className='info1'>
               <h1>Did you know?</h1>
               <p>
@@ -54,11 +54,15 @@ export default function Home() {
             </div>
             <img src={laptopUser2} alt='' className='lpt1' />
           </article>
-          <article>
-            <img src={laptopUser1} alt='' className='lpt2' />
+          <article className='article-content'>
+            <div className='flex-ar'>
+              <img src={laptopUser1} alt='' className='lpt2' />
+              <div>
+                <h1>...but it's hard to find the good ones.</h1>
+                <p>Finding great employess overseas can be tough</p>
+              </div>
+            </div>
             <div>
-              <h1>...but it's hard to find the good ones.</h1>
-              <p>Finding great employess overseas can be tough</p>
               <div className='profile-container profile1'>
                 <img src={jay} alt='' className='profile' />
                 <div>

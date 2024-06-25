@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from 'react'
 import '../styles/Navbar.css'
 import { Link } from 'react-router-dom'
+import logo from '/images/devfinda.mp4'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,7 +41,16 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${isScrollingUp ? 'show' : 'hide'}`}>
-      <h1 className='brand'>devfinda</h1>
+      <div className='video-logo-container'>
+        <video
+          src={logo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className='video-logo'
+        />
+      </div>
       <div className='menu-icon' onClick={toggleMenu}>
         <div className={`bar ${isOpen ? 'bar1' : ''}`}></div>
         <div className={`bar ${isOpen ? 'bar2' : ''}`}></div>
@@ -70,4 +79,3 @@ export default function Navbar() {
     </nav>
   )
 }
-
