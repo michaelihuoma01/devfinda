@@ -46,11 +46,15 @@ export default function Home() {
                   <span className='asterik'>*</span>Proficiency in English,
                   making teamwork easy
                 </h3>
+                <h3>
+                  <span className='asterik'>*</span>Years of experience to
+                  handle any project
+                </h3>
               </ul>
             </div>
             <img src={laptopUser2} alt='' className='lpt1' />
           </article>
-          <article >
+          <article>
             <img src={laptopUser1} alt='' className='lpt2' />
             <div>
               <h1>...but it's hard to find the good ones.</h1>

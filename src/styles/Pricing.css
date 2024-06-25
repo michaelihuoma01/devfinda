@@ -3,7 +3,7 @@
   place-items: center;
   border-radius: 26px;
   gap: 32px;
-  padding: 44px;
+  padding: 40px;
   /* width: 100%; */
   background-color: #3558e6;
   margin: 0px 40px 100px;
@@ -197,7 +197,7 @@
   gap: 80px;
   justify-content: center;
   overflow: visible;
-  padding: 56px 32px 120px;
+  padding: 56px 32px 220px;
   position: relative;
   width: 100%;
 }
@@ -211,7 +211,7 @@
 
 .rem-slides {
   overflow: hidden;
-  width: 1300px;
+  /* width: 1300px; */
 }
 
 .clients-slides {

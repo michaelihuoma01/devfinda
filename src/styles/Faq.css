@@ -15,7 +15,7 @@ font-size: 28px;
 }
 
 .faq-item {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .faq-question {
@@ -89,7 +89,8 @@ font-family: "Plus Jakarta Sans";
   margin-top: 10px;
   position: relative;
   margin-left: 10px;
-  max-width: 502px;
+  max-width: 80%;
+  line-height: 30px;
   font-family: "Plus Jakarta Sans";
 }
 
@@ -100,7 +101,7 @@ font-family: "Plus Jakarta Sans";
 
 .faq-item .faq-line {
   border-bottom: 1px solid #cfd6f3;
-  width: 90%;
+  width: 81%;
   transition: width 0.3s ease;
   margin-left: 10px;
 }

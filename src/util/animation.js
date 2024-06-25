@@ -16,16 +16,14 @@ export function homeAnimation() {
     { x: 0, opacity: 1, ease: 'power3.out', duration: 1 }
   )
 
-  gsap.fromTo(
-    '.home-info article:first-child',
-    { y: -100, opacity: 0 },
-    { y: 0, opacity: 0, ease: 'power3.out', duration: 1 }
-  )
+  gsap.from('.home-info article:first-child',{
+    opacity: 0
+  })
 
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.home-info',
-      start: 'top 63.3%',
+      start: 'top 63.6%',
       toggleActions: 'play none none none',
     },
   })
@@ -33,12 +31,12 @@ export function homeAnimation() {
   tl.fromTo(
     '.home-info article:first-child',
     { y: -100, opacity: 0 },
-    { y: 0, opacity: 1, ease: 'power3.out', duration: 1, delay: 0.5 }
+    { y: 0, opacity: 1, ease: 'power3.out', duration: 1,}
   )
   tl.fromTo(
     '.home-info article:last-child',
     { y: 100, opacity: 0 },
-    { y: 0, opacity: 1, ease: 'power3.out', duration: 0.3 }
+    { y: 0, opacity: 1, ease: 'power3.out', duration: 1 }
   )
 }
 
