@@ -189,12 +189,21 @@ export function pricingAnimation() {
     '-=1'
   )
 
-  gsap.from('.client-text', {
-    y: 100,
-    opacity: 0,
-    ease: 'power3.out',
-    duration: 1,
-  })
+  gsap.fromTo(
+    '.client-text',
+    {
+      y: 100,
+      opacity: 0,
+      ease: 'power3.out',
+      duration: 0.5,
+    },
+    {
+      y: 0,
+      opacity: 1,
+      ease: 'power3.out',
+      duration: 0.5,
+    }
+  )
 }
 
 export function faqAnimation() {

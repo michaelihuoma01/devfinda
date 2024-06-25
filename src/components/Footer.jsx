@@ -29,7 +29,7 @@ export default function Footer() {
         <main className='footer-main'>
           <article className='footer-details'>
             <div className='social-container'>
-              <h1>devfind</h1>
+              <h1>devfinda</h1>
               <ul className='socials'>
                 <div>
                   <img src='' alt='' />

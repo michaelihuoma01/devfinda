@@ -92,3 +92,9 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 400px){
+.navbar{
+  margin-bottom: 0;
+}
+}

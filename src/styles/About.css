@@ -95,7 +95,7 @@ align-self: center;
   place-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
-  padding: 40px 40px;
+  /* padding: 40px 40px; */
 }
 
 .guide-box {
@@ -176,4 +176,60 @@ align-self: center;
   font-size: 18px;
   color: #52525b;
   font-family: "Plus Jakarta Sans";
+}
+
+@media screen and (max-width: 768px){
+.slides-container{
+  flex-direction: column;
+}
+.slideImg1,.slideImg3{
+  width: 50%;
+}
+.guides{
+  grid-template-columns: 1fr ;
+place-items: center;
+}
+
+.guide-box{
+  width: 100%;
+}
+.roles{
+  padding: 41px 0;
+}
+
+.roles h1 {
+font-size: 22px;
+
+}
+.roles-container {
+flex-direction: column;
+
+}
+
+.role-slides{
+  padding: 44px 20px;
+
+}
+}
+
+@media screen and (max-width: 400px){
+.guide-box{
+  width: 100%;
+}
+.about{
+  margin: 100px 20px;
+
+}
+
+.slides-container{
+  margin: 0 20px;
+}
+
+.roles h1{
+  padding-top: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
 }

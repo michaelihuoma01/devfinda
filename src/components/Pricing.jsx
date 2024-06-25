@@ -17,31 +17,33 @@ export default function Pricing() {
 
   return (
     <>
-      <article id='pricing' className='pricing-container'>
-        <h1>Pricing</h1>
-        <div className='pricing'>
-          <h2>$3000/month</h2>
-          <ul className='pricing-list'>
-            <li>
-              <img src='' alt='' />
-              <p>Access to unlimited talents</p>
-            </li>
-            <li>
-              <img src='' alt='' />
-              <p>High-Quality Talent</p>
-            </li>
-            <li>
-              <img src='' alt='' />
-              <p>Seamless Onboarding & Hiring Process</p>
-            </li>
-            <li>
-              <img src='' alt='' />
-              <p>No Hidden Costs</p>
-            </li>
-          </ul>
-          <Link className='hire-btn'>Start Hiring!</Link>
-        </div>
-      </article>
+      <section className='pricing-menu'>
+        <article id='pricing' className='pricing-container'>
+          <h1>Pricing</h1>
+          <div className='pricing'>
+            <h2>$3000/month</h2>
+            <ul className='pricing-list'>
+              <li>
+                <img src='' alt='' />
+                <p>Access to unlimited talents</p>
+              </li>
+              <li>
+                <img src='' alt='' />
+                <p>High-Quality Talent</p>
+              </li>
+              <li>
+                <img src='' alt='' />
+                <p>Seamless Onboarding & Hiring Process</p>
+              </li>
+              <li>
+                <img src='' alt='' />
+                <p>No Hidden Costs</p>
+              </li>
+            </ul>
+            <Link className='hire-btn'>Start Hiring!</Link>
+          </div>
+        </article>
+      </section>
       <section>
         <main className='call-container'>
           <article className='call-section'>

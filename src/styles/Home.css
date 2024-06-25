@@ -118,7 +118,7 @@
 
 .home-info h4 {
   font-size: 14px;
-  color: #000;
+  color: #1f2a37;
   font-family: 'Plus Jakarta Sans';
   width: 395px;
 }
@@ -142,4 +142,82 @@
   height: 73px;
   border-radius: 100px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+ .expand-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .expand {
+    width: 100%; /* Adjust width as needed */
+    text-align: center; /* Center align text */
+  }
+
+  .expand p{
+    text-align: center;
+    width: 100%;
+  }
+
+  .s-btn{
+    width:100%;
+  }
+
+  .expand h1{
+    font-size: 32px;
+  }
+
+  .homeImg {
+    width: 100%;
+    order: -1; /* Moves the image above the text */
+    margin-bottom: 20px; /* Optional: Adds space between image and text */
+  }
+
+  .home-info{
+    grid-template-columns: 1fr;
+    gap: 100px;
+    margin: 0;
+  padding: 20px 40px 0px;
+
+  }
+
+  .home-info h1{
+    font-size: 32px;
+  }
+
+.home-info h4 {
+width: 100%;
+}
+
+.profile1{
+margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+}
+
+
+@media screen and (max-width: 400px){
+
+.homeImg{
+  border-radius: 26px;
+}
+
+.home-info{
+  padding: 20px 20px 0px;
+gap: 40px;
+}
+
+.info1{
+  margin-top: 30px;
+}
+
+.lpt1{
+  max-height: 214px;
+}
+.profile1{
+  margin-bottom: 20px;
+}
 }

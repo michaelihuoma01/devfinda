@@ -72,7 +72,10 @@ margin-top: 16px;
   margin: 10% 0 0 0;
   /* justify-content: space-between; */
 }
-
+.social-container h1{
+  font-family: "Plus Jakarta Sans";
+  
+}
 
 .company {
   display: flex;
@@ -115,4 +118,40 @@ margin-top: 16px;
  font-family: "Plus Jakarta Sans";
   padding-left: 32px;
 
+}
+
+@media screen and (max-width: 768px) {
+.footer-info{
+  left: 0;
+right: 0;
+top: -700px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.details{
+  align-items: center;
+}
+
+.details h1{
+  width: 100%;
+}
+.details p{
+  max-width: 100%;
+  line-height: 30px;
+}
+
+.techiesImg{
+  
+  width: 100%;
+}
+
+.footer-details{
+  flex-direction: column;
+}
+
+.footer-main{
+  padding: 200px 20px 100px;
+
+}
 }

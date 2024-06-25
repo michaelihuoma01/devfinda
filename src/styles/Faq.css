@@ -100,9 +100,31 @@ font-family: "Plus Jakarta Sans";
 
 .faq-item .faq-line {
   border-bottom: 1px solid #cfd6f3;
-  /* width: calc(100% - 100px); */
   width: 90%;
   transition: width 0.3s ease;
   margin-left: 10px;
 }
 
+
+@media screen and (max-width: 768px) {
+.faq-section{
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 300px;
+}
+.faq-section h1{
+margin-bottom: 40px;
+/* width: 60px; */
+text-align: center;
+}
+
+.faq-container{
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 400px){
+.faq-section{
+  margin: 30px 20px 450px 0;
+}
+}

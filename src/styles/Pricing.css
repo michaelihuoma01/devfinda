@@ -2,16 +2,8 @@
   display: grid;
   place-items: center;
   border-radius: 26px;
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
   gap: 32px;
-  height: min-content;
-  justify-content: center;
-  overflow: hidden;
   padding: 44px;
-  position: relative;
   /* width: 100%; */
   background-color: #3558e6;
   margin: 0px 40px 100px;
@@ -88,7 +80,7 @@
   flex-direction: column;
   gap: 10px;
   font-size: 18px;
-  color: #52525b;
+  color: #000;
   max-width: 342px;
   font-family: 'Plus Jakarta Sans';
 }
@@ -211,15 +203,15 @@
 }
 
 .client-text {
+  margin: 25px 0;
   align-self: center;
   font-size: 28px;
   font-family: 'Recoleta Black', sans-serif;
 }
 
- .rem-slides {
+.rem-slides {
   overflow: hidden;
   width: 1300px;
-
 }
 
 .clients-slides {
@@ -233,12 +225,11 @@
 
   box-sizing: border-box;
   padding: 32px;
-  margin: 0 20px ;
+  margin: 0 20px;
   border-radius: 26px;
-   display: flex;
+  display: flex;
   flex-direction: column;
   gap: 48px;
-
 }
 
 @keyframes slide {
@@ -246,11 +237,9 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
-
-
 
 .client-slide p {
   font-size: 18px;
@@ -315,4 +304,124 @@
 
 .cslide-3 h2 {
   color: #b3b3b4;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-menu{
+    display: grid;
+    place-items: center;
+  }
+  .pricing-container {
+    width: 330px;
+  padding: 44px 27px;
+
+  }
+  .pricing{
+    width: 100%;
+    gap: 10px;
+    padding: 24px;
+  }
+
+  .call-section{
+    flex-direction: column;
+  }
+
+  .callImg{
+    order: -1;
+  }
+
+  .call-info h1{
+    font-size: 24px;
+  }
+
+  .call-links{
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .schedule,.send-mail{
+    width: 100%;
+  }
+
+  .rem-slides {
+    overflow: hidden;
+    width: 50%; 
+    margin: auto; 
+  }
+  .clients-section{
+  padding: 56px 32px 0px;
+  }
+
+  .clients-slides {
+    display: flex;
+    width: 100%; 
+    animation: slide 25s infinite;
+  }
+
+  .client-slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 32px;
+    margin: 0 auto; 
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 10px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+ 
+}
+
+
+@media screen and (max-width: 400px){
+.pricing-container{
+  margin: 0;
+}
+
+.call-container{
+  margin-top: 30px;
+}
+.rem-slides {
+    /* overflow: hidden; */
+    width: 100%; 
+    /* margin: auto;  */
+  }
+  .clients-slides {
+    display: flex;
+    width: 100%; 
+    animation: slide 25s infinite;
+  }
+.clients-section{
+  padding: 56px 20px 0px;
+  }
+  .client-slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 32px;
+    margin: 0 auto; 
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 10px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+ 
 }
