@@ -152,7 +152,7 @@ export function pricingAnimation() {
       },
     }
   )
-  //call
+
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.call-section',
@@ -160,31 +160,60 @@ export function pricingAnimation() {
     },
   })
 
-  tl.fromTo(
-    '.call-info h1',
-    { y: 100, opacity: 0 },
-    { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
-  )
+  if (window.innerWidth <= 768) {
+    tl.fromTo(
+      '.callImg',
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 2, ease: 'power3.out' }
+    )
 
-  tl.fromTo(
-    '.call-list li',
-    { y: 50, opacity: 0 },
-    { y: 0, opacity: 1, duration: 1, ease: 'power3.out', stagger: 0.2 }
-  )
+    tl.fromTo(
+      '.call-info h1',
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }
+    )
 
-  tl.fromTo(
-    ['.call-links'],
-    { y: 50, opacity: 0 },
-    { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
-    '-=0.5'
-  )
+    tl.fromTo(
+      '.call-list li',
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out', stagger: 0.2 }
+    )
 
-  tl.fromTo(
-    '.callImg',
-    { x: 100, opacity: 0 },
-    { x: 0, opacity: 1, duration: 2, ease: 'power3.out' },
-    '-=1'
-  )
+    tl.fromTo(
+      ['.call-links'],
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' },
+      '-=0.5'
+    )
+  } else {
+    tl.fromTo(
+      '.call-info h1',
+      { y: 100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
+    )
+
+    tl.fromTo(
+      '.call-list li',
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: 'power3.out', stagger: 0.2 }
+    )
+
+    tl.fromTo(
+      ['.call-links'],
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
+      '-=0.5'
+    )
+
+    tl.fromTo(
+      '.callImg',
+      { x: 100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 2, ease: 'power3.out' },
+      '-=1'
+    )
+  }
+
+  // hba
 
   gsap.fromTo(
     '.client-text',
