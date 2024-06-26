@@ -19,7 +19,7 @@ export default function Home() {
         <div className='expand'>
           <h1>
             Expand Your Team, <br />
-            Not Your Budget.
+            Not Your Budget
           </h1>
           <p>
             Hire world-class tech talent overseas at a fraction of the cost of
@@ -59,7 +59,7 @@ export default function Home() {
             <div className='flex-ar'>
               <img src={laptopUser1} alt='' className='lpt2' />
               <div>
-                <h1>...but it's hard to find the good ones.</h1>
+                <h1>...but it's hard to <br /> find the good ones.</h1>
                 <p>Finding great employess overseas can be tough</p>
               </div>
             </div>
@@ -91,40 +91,7 @@ export default function Home() {
               </div>
             </div>
           </article>
-          {/* <article className='home-article'>
-            <img src={laptopUser1} alt='' className='lpt2' />
-            <div className='article-content'>
-              <div className='content'>
-                <h1>...but it's hard to find the good ones.</h1>
-                <p>Finding great employees overseas can be tough</p>
-              </div>
-              <div>
-                <div className='profile-container'>
-                  <img src={jay} alt='' className='profile' />
-                  <div>
-                    <span className='quote'>"</span>
-                    <h4>
-                      I've always struggled to find people overseas, but they
-                      found me a great app developer in 3 days!
-                    </h4>
-                    <h5>Alan, Fitness Entrepreneur</h5>
-                  </div>
-                </div>
-                <div className='profile-container'>
-                  <img src={jay} alt='' className='profile' />
-                  <div>
-                    <span className='quote'>"</span>
-                    <h4>
-                      I really enjoyed working with the team to find a new
-                      developer for my team! I've been extremely happy with the
-                      entire experience.
-                    </h4>
-                    <h5>Jay, Agency Founder</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article> */}
+          
         </main>
       </div>
     </>

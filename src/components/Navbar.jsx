@@ -66,12 +66,15 @@ export default function Navbar() {
         <a href='#pricing' onClick={closeMenu}>
           Pricing
         </a>
+
         <a href='#testimonials' onClick={closeMenu}>
           Testimonials
         </a>
         <a href='#faqs' onClick={closeMenu}>
           FAQs
         </a>
+      </div>
+      <div>
         <Link className='hiring-btn' onClick={closeMenu}>
           Start Hiring
         </Link>

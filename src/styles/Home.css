@@ -1,24 +1,22 @@
 .expand-container {
-  padding: 20px 40px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin: 100px auto;
+  max-width: 1240px;
 }
-
 .expand {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  width: 647px;
 }
 
 .homeImg {
-  width: 301px;
-  height: 219px;
+  width: 100%;
   border-radius: 50px;
   object-fit: cover;
 }
+
 .expand h1 {
   font-size: 46px;
   font-family: 'Recoleta Black', sans-serif;
@@ -28,36 +26,42 @@
 .expand p {
   color: #52525b;
   font-size: 18px;
-  width: 512px;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
-  /* font-weight: 600; */
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
   line-height: 30px;
+  max-width: 512px;
 }
+
 .main-info {
   display: grid;
   place-items: center;
+  margin: 56px auto;
 }
 
 .home-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 44px 0px;
-  gap: 48px;
-  margin: 56px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
-.info1{
+.article-content {
+  max-width: 600px;
+  padding: 24px;
+}
+
+.info1 {
   margin-top: 80px;
 }
 
 .info1 p {
+  max-width: 500px;
   margin-bottom: 17px;
 }
 
 .lpt1 {
   width: 100%;
+  height: 48%;
   border-radius: 40px;
-  height: 365px;
   object-fit: cover;
   margin-top: 17px;
 }
@@ -71,13 +75,13 @@
 
 .home-info h1 {
   font-size: 46px;
-  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }
 
 .home-info p {
   color: #52525b;
   font-size: 18px;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
   margin-top: 10px;
 }
 
@@ -86,13 +90,13 @@
   text-align: center;
 }
 
-.s-btn:hover{
+.s-btn:hover {
   background-color: #ff1265;
 }
 
-.profile1{
-margin-top: 20px;
-  margin-bottom: 80px;
+.profile1 {
+  margin-top: 20px;
+  /* margin-bottom: 80px; */
 }
 .qualities {
   display: flex;
@@ -100,7 +104,7 @@ margin-top: 20px;
   gap: 8px;
 }
 
-.qualities h3{
+.qualities h3 {
   display: flex;
   align-items: center;
 }
@@ -114,7 +118,7 @@ margin-top: 20px;
 .home-info h3 {
   font-size: 18px;
   color: #000;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 .quote {
   color: #ff1265;
@@ -124,157 +128,152 @@ margin-top: 20px;
 
 .home-info h4 {
   font-size: 14px;
+  max-width: 300px;
   color: #1f2a37;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
-  width: 395px;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 
 .home-info h5 {
   font-size: 14px;
   color: #333333;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
   font-weight: 100;
   font-style: italic;
   margin-top: 10px;
   opacity: 0.8;
 }
-.profile-container{
+.profile-container {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.profile{
+.profile {
   width: 73px;
   height: 73px;
   border-radius: 100px;
   object-fit: cover;
 }
 
-@media screen and (max-width: 1000px){
- .expand-container {
+@media screen and (max-width: 1000px) {
+  .expand-container {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
 
   .expand {
-    width: 100%; 
-    text-align: center; 
+    width: 100%;
+    text-align: center;
   }
 
-  .expand p{
+  .expand p {
     text-align: center;
     width: 100%;
   }
 
-  .s-btn{
-    width:100%;
+  .s-btn {
+    width: 100%;
   }
 
-  .expand h1{
+  .expand h1 {
     font-size: 32px;
   }
 
   .homeImg {
     width: 100%;
     height: 100%;
-    order: -1; 
-    margin-bottom: 20px; 
+    order: -1;
+    margin-bottom: 20px;
   }
 
-  .home-info{
+  .home-info {
     grid-template-columns: 1fr;
     gap: 100px;
     margin: 0;
-  padding: 20px 40px 0px;
-
+    padding: 20px 40px 0px;
   }
 
-  .home-info h1{
+  .home-info h1 {
     font-size: 32px;
   }
 
-.home-info h4 {
-width: 100%;
+  .home-info h4 {
+    width: 100%;
+  }
+
+  .profile1 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
 }
 
-.profile1{
-margin-top: 20px;
-  margin-bottom: 80px;
-}
+@media screen and (max-width: 500px) {
+  .expand-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 
-}
+  .expand {
+    gap: 18px;
+  }
+  .expand h1 {
+    line-height: 40px;
+  }
+  .expand p {
+    line-height: 29px;
+  }
+  .homeImg {
+    height: 260px;
+    border-radius: 32px;
+  }
 
+  .home-info {
+    padding: 20px 20px 0px;
+    gap: 40px;
+  }
 
-@media screen and (max-width: 500px){
-.expand-container{
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
+  .home-info h3 {
+    line-height: 30px;
+  }
 
-.expand{
-  gap: 18px;
-}
-.expand h1{
-  line-height: 40px;
-}
-.expand p{
-  line-height: 29px;
-}
-.homeImg{
-  height: 260px;
-  border-radius: 32px;
-}
+  .info1 {
+    margin-top: 30px;
+  }
 
-.home-info{
-  padding: 20px 20px 0px;
-gap: 40px;
-}
+  .info1 p {
+    line-height: 30px;
+  }
 
-.home-info h3{
-  line-height: 30px;
-}
+  .article-content {
+    padding: 0 20px 23px;
+  }
 
-.info1{
-  margin-top: 30px;
-}
+  .lpt1 {
+    max-height: 214px;
+    border-radius: 30px;
+  }
+  .profile1 {
+    margin-bottom: 20px;
+  }
 
-.info1 p{
-  line-height: 30px;
-}
+  .lpt2 {
+    max-height: 214px;
+  }
 
-.article-content{
-  padding: 0 20px 23px;
-}
+  .home-info h4 {
+    line-height: 20px;
+  }
+  .flex-ar {
+    display: flex;
+    flex-direction: column;
+  }
 
-.lpt1{
-  max-height: 214px;
-  border-radius: 30px;
+  .flex-ar img {
+    order: 1;
+  }
 
-}
-.profile1{
-  margin-bottom: 20px;
-}
-
-.lpt2{
-  max-height: 214px;
-
-}
-
-.home-info h4{
-  line-height: 20px;
-}
-.flex-ar{
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-ar img{
-  order: 1;
-}
-
-.flex-ar div{
-  order: -1;
-  margin-bottom: 20px;
-}
+  .flex-ar div {
+    order: -1;
+    margin-bottom: 20px;
+  }
 }

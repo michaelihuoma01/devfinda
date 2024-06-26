@@ -36,7 +36,7 @@ export default function About() {
             <img src={slideImg1} alt='' className='slideImg1' />
           </article>
           <article className='slides slide-2'>
-            <img src={slideImg2} alt=''  className='slideImg2'/>
+            <img src={slideImg2} alt='' className='slideImg2' />
             <h1>Rigorous Vetting, Quality Talent</h1>
             <p>
               Reduce hiring risks with our detailed screening, ensuring only the
@@ -54,33 +54,38 @@ export default function About() {
           </article>
         </section>
         <section className='guide'>
-          <h1>Your Experience with Us: <br /> A Quick Guide</h1>
+          <h1>
+            Your Experience with Us: <br /> A Quick Guide
+          </h1>
           <main className='guides'>
-            <div className='guide-box'>
-              <img src={cusService} alt='' className='guideImg' />
-              <p>
-                Tell us about the role. We’ll discuss your needs and the ideal
-                candidate
-              </p>
+            <div className='guide-content'>
+              <div className='guide-box'>
+                <img src={cusService} alt='' className='guideImg' />
+                <p>
+                  Tell us about the role. We’ll discuss your needs and the ideal
+                  candidate
+                </p>
+              </div>
+              <div className='guide-box'>
+                <img src={searching} alt='' className='guideImg' />
+                <p>
+                  We search, screen, and shortlist three top candidates for your
+                  review
+                </p>
+              </div>
             </div>
-            <div className='guide-box'>
-              <img src={searching} alt='' className='guideImg' />
-              <p>
-                We search, screen, and shortlist three top candidates for your
-                review
-              </p>
-            </div>
-            <div className='guide-box'>
-              <img src={onlineInt} alt='' className='guideImg' />
-              <p>
-                We present the top three picks. You interview them to find your
-                best match.
-              </p>
-            </div>
-            <div className='guide-box'>
-              <img src={interview} alt='' className='guideImg' />
-
-              <p>Choose your perfect hire and get started!</p>
+            <div className='guide-content'>
+              <div className='guide-box'>
+                <img src={onlineInt} alt='' className='guideImg' />
+                <p>
+                  We present the top three picks. You interview them to find
+                  your best match.
+                </p>
+              </div>
+              <div className='guide-box'>
+                <img src={interview} alt='' className='guideImg' />
+                <p>Choose your perfect hire and get started!</p>
+              </div>
             </div>
           </main>
         </section>

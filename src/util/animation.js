@@ -21,7 +21,8 @@ export function homeAnimation() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.home-info',
-      start: 'top 63.6%',
+      // start: 'top 63.6%',
+      start: 'top 80%',
       toggleActions: 'play none none none',
     },
   })

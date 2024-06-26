@@ -1,12 +1,15 @@
+.pricing-menu{
+    margin: 50px auto;
+  max-width: 1240px;
+}
 .pricing-container {
   display: grid;
   place-items: center;
   border-radius: 26px;
   gap: 32px;
   padding: 40px;
-  /* width: 100%; */
   background-color: #3558e6;
-  margin: 0px 40px 100px;
+ 
 }
 
 .pricing-container h1 {
