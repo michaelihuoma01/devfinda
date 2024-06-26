@@ -1,21 +1,50 @@
-.pricing-menu{
-    margin: 50px auto;
-  max-width: 1240px;
+.pricing-menu {
+  margin: 120px auto;
+  max-width: 1010px;
 }
-.pricing-container {
+
+ .pricing-container {
   display: grid;
   place-items: center;
   border-radius: 26px;
   gap: 32px;
   padding: 40px;
   background-color: #3558e6;
- 
+  position: relative; 
+  overflow: hidden; 
 }
 
+.pricing-container::before {
+  content: '';
+  position: absolute;
+  bottom: -100px; 
+  right: -300px;
+  width: 900px;
+  height: 100%;
+  background-image: url('/images/Line@4x.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+  z-index: 1; 
+}
+
+.pricing-container::after {
+  content: '';
+  position: absolute;
+  top: -100px; 
+  left: -300px; 
+  width: 900px;
+  height: 100%;
+  background-image: url('/images/Line@4x.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: bottom right;
+  z-index: 1; 
+}
 .pricing-container h1 {
   font-size: 28px;
   color: #fff;
-  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }
 
 .pricing {
@@ -27,18 +56,35 @@
   padding: 24px;
   position: relative;
   width: 554px;
+  z-index: 2; 
 }
 
 .pricing h2 {
   font-size: 26px;
   align-self: center;
-  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
+  z-index: 3;
 }
 
 .pricing-list {
   font-size: 14px;
   color: #52525b;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
+}
+
+.pricing-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pricing-list .icon {
+  background-color: #d0e5fe;
+  color: #2269f2;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 10px;
+  margin-right: 10px;
 }
 
 .hire-btn {
@@ -48,8 +94,9 @@
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }
+
 
 .hire-btn:hover {
   background-color: #3558e6;
@@ -64,18 +111,19 @@
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .call-info {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  /* max-width: 700px; */
 }
 
 .call-info h1 {
   font-size: 28px;
-  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }
 
 .call-list {
@@ -84,8 +132,9 @@
   gap: 10px;
   font-size: 18px;
   color: #000;
-  max-width: 342px;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  /* max-width: 342px; */
+  width: 342px;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 .call-list li {
   display: flex;
@@ -105,7 +154,7 @@
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }
 
 .schedule:hover {
@@ -119,7 +168,7 @@
   color: #000;
   text-align: center;
   font-size: 16px;
-  font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }
 
 .send-mail:hover {
@@ -128,8 +177,8 @@
 }
 
 .callImg {
-  width: 302px;
-  height: 334px;
+  /* width: 402px; */
+  height: 274px;
   object-fit: cover;
   border-radius: 50px;
 }
@@ -198,33 +247,29 @@
 .clients-section {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 80px;
+  gap: 150px;
   justify-content: center;
-  overflow: visible;
-  position: relative;
   margin: 0 auto;
   max-width: 1240px;
 }
 
-.client-text{
+.client-text {
   display: grid;
   place-items: center;
   text-align: center;
 }
 
-.client-text h1{
+.client-text h1 {
   align-self: center;
   font-size: 28px;
-   font-family: "Recoleta Black", "Recoleta Black Placeholder", sans-serif;
+  font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
   margin-bottom: 16px;
 }
 
-.client-text p{
+.client-text p {
   font-size: 18px;
   color: #52525b;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
-
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 
 .rem-slides {
@@ -237,7 +282,7 @@
 .clients-slides {
   display: flex;
   gap: 20px;
-  width: max-content; 
+  width: max-content;
   animation: scrollSlides 30s linear infinite;
 }
 
@@ -247,16 +292,18 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  max-width: 550px; 
+  max-width: 500px;
 }
 
-.cslide-1, .cslide-2, .cslide-3 {
-  flex: 0 0 auto; 
+.cslide-1,
+.cslide-2,
+.cslide-3 {
+  flex: 0 0 auto;
 }
 
 .client-slide p {
   font-size: 18px;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
   font-weight: 500;
   line-height: 30px;
 }
@@ -266,7 +313,7 @@
   flex-direction: column;
   gap: 20px;
 }
-.client-info img{
+.client-info img {
   width: 73px;
   height: 73px;
   border-radius: 100px;
@@ -275,14 +322,14 @@
 
 .client-info h1 {
   font-size: 18px;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 
 .client-info h2 {
   font-size: 16px;
   color: #52525b;
   font-weight: 100;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 
 .cslide-1 {
@@ -326,26 +373,24 @@
 }
 
 @media screen and (max-width: 1300px) {
-.pricing-menu{
-  max-width: 1000px;
+  .pricing-menu {
+    max-width: 1000px;
+  }
+  .clients-section {
+    max-width: 1000px;
+  }
+  .orgs {
+    max-width: 1000px;
+  }
 }
 
-.clients-section{
-  max-width: 1000px;
-}
-.orgs{
-  max-width: 1000px;
-
-}
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 801px) {
   .pricing-menu {
     display: grid;
     place-items: center;
   }
   .pricing-container {
-    width: 330px;
+    width: 92%;
     padding: 44px 27px;
   }
   .pricing {
@@ -356,14 +401,22 @@
 
   .call-section {
     flex-direction: column;
+    /* width: 92%; */
+    /* padding: 40px; */
   }
 
   .callImg {
     order: -1;
+    /* width: 302px; */
+    object-fit: cover;
   }
+
 
   .call-info h1 {
     font-size: 24px;
+  }
+  .call-list {
+    min-width: 100%;
   }
 
   .call-links {
@@ -385,50 +438,62 @@
     padding: 56px 32px 0px;
   }
 
-
-
-}
-
-@media screen and (max-width: 801px) {
-  .orgs{
-  max-width: none;
-  width: 100%;
-
-}
+  .orgs {
+    max-width: none;
+    width: 100%;
+  }
   .pricing-container {
     margin: 0;
   }
-  .pricing-list{
+  .pricing-list {
     font-size: 18px;
   }
 
   .call-container {
+    /* display: flex; */
+    /* align-items: center; */
     margin-top: 30px;
-  }
-
-  .call-list{
-    width: 312px;
   }
 
   .clients-section {
     padding: 56px 20px 0px;
   }
-  .client-slide{
+  .client-slide {
     width: 335px;
   }
 
-  .client-text h1{
+  .client-text h1 {
     font-size: 24px;
   }
+}
+
+@media screen and (max-width: 500px) {
+.callImg{
+  width: 301px;
+}
+
+.pricing-container::before {
+
+  bottom: -100px; 
+  right: -300px;
+  width: 900px;
 
 }
 
+.pricing-container::after {
+
+  top: -100px; 
+  left: -600px; 
+  width: 300px;
+  
+}
+}
 
 @keyframes scrollSlides {
   0% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }

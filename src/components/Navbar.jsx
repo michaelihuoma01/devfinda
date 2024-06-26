@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Navbar.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '/images/devfinda.mp4'
 
 export default function Navbar() {
@@ -19,16 +19,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.pageYOffset
-      if (currentScroll <= 0) {
-        setIsScrollingUp(true)
-        return
-      }
-
-      if (currentScroll > lastScroll) {
-        setIsScrollingUp(false)
-      } else if (currentScroll < lastScroll) {
-        setIsScrollingUp(true)
-      }
+      setIsScrollingUp(currentScroll <= lastScroll)
       lastScroll = currentScroll
     }
 
@@ -38,6 +29,23 @@ export default function Navbar() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
+
+const scrollToSection = (id) => {
+    
+  const element = document.getElementById(id)
+  const navbarHeight = document.querySelector('.navbar').offsetHeight
+
+  if (element) {
+    const offsetTop = element.offsetTop - navbarHeight
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth',
+    })
+  }
+  closeMenu()
+}
+
+
 
   return (
     <nav className={`navbar ${isScrollingUp ? 'show' : 'hide'}`}>
@@ -57,26 +65,33 @@ export default function Navbar() {
         <div className={`bar ${isOpen ? 'bar3' : ''}`}></div>
       </div>
       <div className={`menu ${isOpen ? 'open' : ''}`}>
-        <a href='#home' onClick={closeMenu}>
+        <NavLink to='#home' onClick={() => scrollToSection('home')}>
           Home
-        </a>
-        <a href='#about' onClick={closeMenu}>
+        </NavLink>
+        <NavLink to='#about' onClick={() => scrollToSection('about')}>
           About
-        </a>
-        <a href='#pricing' onClick={closeMenu}>
+        </NavLink>
+        <NavLink to='#pricing' onClick={() => scrollToSection('pricing')}>
           Pricing
-        </a>
-        <a href='#testimonials' onClick={closeMenu}>
+        </NavLink>
+        <NavLink
+          to='#testimonials'
+          onClick={() => scrollToSection('testimonials')}
+        >
           Testimonials
-        </a>
-        <a href='#faqs' onClick={closeMenu}>
+        </NavLink>
+        <NavLink to='#faqs' onClick={() => scrollToSection('faqs')}>
           FAQs
-        </a>
+        </NavLink>
       </div>
       <div className='navbar-right'>
-        <Link className='hiring-btn' onClick={closeMenu}>
+        <NavLink
+          to='#pricing'
+          className='hiring-btn'
+          onClick={() => scrollToSection('pricing')}
+        >
           Start Hiring
-        </Link>
+        </NavLink>
       </div>
     </nav>
   )

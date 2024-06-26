@@ -21,7 +21,6 @@ export function homeAnimation() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.home-info',
-      // start: 'top 63.6%',
       start: 'top 80%',
       toggleActions: 'play none none none',
     },
@@ -30,31 +29,16 @@ export function homeAnimation() {
   tl.fromTo(
     '.home-info article:first-child',
     { y: -100, opacity: 0 },
-    { y: 0, opacity: 1, ease: 'power3.out', duration: 1 }
+    { y: 0, opacity: 1, ease: 'expo.out', duration: 2 }
   )
-
   tl.fromTo(
     '.home-info article:last-child',
     { y: 100, opacity: 0 },
-    { y: 0, opacity: 1, ease: 'power3.out', duration: 1 }
+    { y: 0, opacity: 1, ease: 'expo.out', duration: 2 }
   )
 }
 
 export function aboutAnimation() {
-  gsap.fromTo(
-    '.about-info',
-    { y: 100, opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      ease: 'power3.out',
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: '.about-info',
-        start: 'top bottom',
-      },
-    }
-  )
 
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -63,9 +47,35 @@ export function aboutAnimation() {
     },
   })
 
-  tl.fromTo('.slides.slide-1', { opacity: 0 }, { opacity: 1, duration: 0.4 })
-    .fromTo('.slides.slide-2', { opacity: 0 }, { opacity: 1, duration: 0.4 })
-    .fromTo('.slides.slide-3', { opacity: 0 }, { opacity: 1, duration: 0.4 })
+  tl.fromTo(
+    '.about-info',
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      ease: 'expo.out',
+      duration: 2.5,
+    }
+  )
+
+  tl.fromTo(
+    '.slides.slide-1',
+    { opacity: 0 },
+    { opacity: 1, duration: 1 },
+    '-=2'
+  )
+  tl.fromTo(
+    '.slides.slide-2',
+    { opacity: 0 },
+    { opacity: 1, duration: 1 },
+    '-=1.5'
+  )
+  tl.fromTo(
+    '.slides.slide-3',
+    { opacity: 0 },
+    { opacity: 1, duration: 1 },
+    '-=1'
+  )
 
   // GUIDES
   gsap.fromTo(
@@ -74,8 +84,8 @@ export function aboutAnimation() {
     {
       y: 0,
       opacity: 1,
-      ease: 'power3.out',
-      duration: 1,
+      ease: 'expo.out',
+      duration: 2.5,
       scrollTrigger: {
         trigger: '.guide h1',
         start: 'top bottom',
@@ -90,8 +100,8 @@ export function aboutAnimation() {
     {
       y: 0,
       opacity: 1,
-      ease: 'power3.out',
-      duration: 1,
+      ease: 'expo.out',
+      duration: 2.5,
       scrollTrigger: {
         trigger: '.guides',
         start: 'top 80%',
@@ -107,8 +117,8 @@ export function aboutAnimation() {
     {
       y: 0,
       opacity: 1,
-      ease: 'power3.out',
-      duration: 1,
+      ease: 'expo.out',
+      duration: 2.5,
       scrollTrigger: {
         trigger: '.roles',
         start: 'top bottom',
@@ -144,8 +154,8 @@ export function pricingAnimation() {
     {
       y: 0,
       opacity: 1,
-      ease: 'power3.out',
-      duration: 1,
+      ease: 'expo.out',
+      duration: 2.5,
       scrollTrigger: {
         trigger: '.pricing-container',
         start: 'top bottom',
@@ -171,13 +181,13 @@ export function pricingAnimation() {
     tl.fromTo(
       '.call-info h1',
       { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }
+      { y: 0, opacity: 1, duration: 2.5, ease: 'expo.out' }
     )
 
     tl.fromTo(
       '.call-list li',
       { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out', stagger: 0.2 }
+      { y: 0, opacity: 1, duration: 1, ease: 'power3.out', stagger: 0.2 }
     )
 
     tl.fromTo(
@@ -210,7 +220,7 @@ export function pricingAnimation() {
       '.callImg',
       { x: 100, opacity: 0 },
       { x: 0, opacity: 1, duration: 2, ease: 'power3.out' },
-      '-=1'
+      '-=1.1'
     )
   }
 
@@ -221,14 +231,13 @@ export function pricingAnimation() {
     {
       y: 100,
       opacity: 0,
-      ease: 'power3.out',
-      duration: 0.5,
+   
     },
     {
       y: 0,
       opacity: 1,
-      ease: 'power3.out',
-      duration: 0.5,
+      ease: 'expo.out',
+      duration: 2.5,
     }
   )
 }
@@ -278,8 +287,8 @@ export function footerAnimation() {
     {
       y: 0,
       opacity: 1,
-      duration: 0.5,
-      ease: 'power3.out',
+      ease: 'expo.out',
+      duration: 2.5,
       scrollTrigger: {
         trigger: '.footer-info',
         start: 'top bottom',
@@ -295,8 +304,8 @@ export function footerAnimation() {
     {
       y: 0,
       opacity: 1,
-      duration: 1,
-      ease: 'power3.out',
+      ease: 'expo.out',
+      duration: 2.5,
       scrollTrigger: {
         trigger: '.footer-info',
         start: 'top bottom',

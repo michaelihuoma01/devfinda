@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
-  margin: 100px auto;
+  margin: 150px auto;
+  margin-bottom: 0;
   max-width: 1240px;
 }
 
@@ -156,37 +157,50 @@
 }
 
 @media screen and (max-width: 1300px) {
-.expand-container{
-  max-width: 1150px;
-}
-
-.article-content{
-  max-width: 500px;
-}
-
-}
-@media screen and (max-width: 1000px) {
   .expand-container {
-grid-template-columns: 1fr; 
-   padding: 20px;
+    max-width: 1150px;
   }
 
+  .article-content {
+    max-width: 500px;
+  }
+}
+
+
+@media screen and (max-width: 1240px) {
+ .expand-container {
+    max-width: 93%;
+  }
+  .expand p{
+    max-width: 489px;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .expand-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 90px auto 0px;
+  }
   .expand {
     width: 100%;
     text-align: center;
+    gap: 18px;
+  }
+  .expand h1 {
+    line-height: 40px;
+    font-size: 32px;
   }
 
   .expand p {
     text-align: center;
     width: 100%;
+    line-height: 29px;
+    max-width: none;
   }
 
   .s-btn {
     width: 100%;
-  }
-
-  .expand h1 {
-    font-size: 32px;
   }
 
   .homeImg {
@@ -194,45 +208,6 @@ grid-template-columns: 1fr;
     height: 100%;
     order: -1;
     margin-bottom: 20px;
-  }
-
-  .home-info {
-    grid-template-columns: 1fr;
-    gap: 100px;
-    margin: 0;
-    padding: 20px 40px 0px;
-  }
-
-  .home-info h1 {
-    font-size: 32px;
-  }
-
-  .home-info h4 {
-    width: 100%;
-  }
-
-  .profile1 {
-    margin-top: 20px;
-    margin-bottom: 80px;
-  }
-}
-
-@media screen and (max-width: 801px) {
- .expand-container {
-grid-template-columns: 1fr; 
-   padding: 20px;
-  }
-  .expand {
-    gap: 18px;
-  }
-  .expand h1 {
-    line-height: 40px;
-  }
-  .expand p {
-    line-height: 29px;
-    max-width: none;
-  }
-  .homeImg {
     border-radius: 32px;
   }
 
@@ -240,6 +215,9 @@ grid-template-columns: 1fr;
     flex-direction: column;
     padding: 20px 20px 0px;
     gap: 40px;
+  }
+  .home-info h1 {
+    font-size: 32px;
   }
 
   .home-info h3 {
@@ -265,7 +243,6 @@ grid-template-columns: 1fr;
     margin-bottom: 20px;
   }
 
-
   .home-info h4 {
     line-height: 20px;
   }
@@ -281,5 +258,21 @@ grid-template-columns: 1fr;
   .flex-ar div {
     order: -1;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+ /* .expand-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 80px auto 0px;
+  } */
+
+  .main-info{
+    margin: 0;
+  }
+
+  .info1{
+    margin-top: 10px;
   }
 }

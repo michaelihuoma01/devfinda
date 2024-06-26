@@ -25,7 +25,7 @@ export default function Pricing() {
           <h1>Pricing</h1>
           <div className='pricing'>
             <h2>$3000/month</h2>
-            <ul className='pricing-list'>
+            {/* <ul className='pricing-list'>
               <li>
                 <img src='' alt='' />
                 <p>Access to unlimited talents</p>
@@ -40,6 +40,27 @@ export default function Pricing() {
               </li>
               <li>
                 <img src='' alt='' />
+                <p>No Hidden Costs</p>
+              </li>
+            </ul> */}
+            <ul className='pricing-list'>
+              <li>
+                <i className='fa-solid fa-check icon'></i>
+                <p>Access to unlimited talents</p>
+              </li>
+              <li>
+                <i className='fa-solid fa-check icon'></i>
+
+                <p>High-Quality Talent</p>
+              </li>
+              <li>
+                <i className='fa-solid fa-check icon'></i>
+
+                <p>Seamless Onboarding & Hiring Process</p>
+              </li>
+              <li>
+                <i className='fa-solid fa-check icon'></i>
+
                 <p>No Hidden Costs</p>
               </li>
             </ul>
@@ -75,7 +96,7 @@ export default function Pricing() {
           </article>
         </main>
       </section>
-      <section className='clients-section'>
+      <section  className='clients-section'>
         <div className='orgs'>
           <div className='org-slide'>
             <img src={bI} alt='' className='bI' />
@@ -92,11 +113,11 @@ export default function Pricing() {
             <img src={nyt} alt='' className='nyt' />
           </div>
         </div>
-        <div className='client-text'>
+        <div className='client-text' id='testimonials'>
           <h1>Happy Clients</h1>
           <p>Beautiful work from clients I've worked with</p>
         </div>
-        <article className='rem-slides'>
+        <article className='rem-slides' >
           <div className='clients-slides'>
             <div className='client-slide cslide-1'>
               <p>

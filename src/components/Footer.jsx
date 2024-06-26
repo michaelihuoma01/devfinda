@@ -3,7 +3,7 @@ import '../styles/Footer.css'
 import { Link } from 'react-router-dom'
 import techies from '/images/techies.jpg'
 import { footerAnimation } from '../util/animation'
-import logo from '/images/devfinda.mp4'
+import logo from '/images/devfinda.gif'
 import facebook from '/images/fb.svg'
 import instagram from '/images/ig.svg'
 import youtube from '/images/yt.svg'
@@ -34,7 +34,10 @@ export default function Footer() {
         <main className='footer-main'>
           <article className='footer-details'>
             <div className='social-container'>
-              <div className='footer-logo-container'>
+              <div className='logo-wrapper'>
+                <img src={logo} alt='Logo' className='logo' />
+              </div>
+              {/* <div className='footer-logo-container'>
                 <video
                   src={logo}
                   autoPlay
@@ -43,7 +46,7 @@ export default function Footer() {
                   playsInline
                   className='footer-logo'
                 />
-              </div>
+              </div> */}
               <ul className='socials'>
                 <Link className='social-link'>
                   <img src={facebook} alt='' />
@@ -82,7 +85,6 @@ export default function Footer() {
         </main>
         <p className='copyright'>Copyright &copy; {year}</p>
       </footer>
-     
     </>
   )
 }

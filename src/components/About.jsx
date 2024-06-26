@@ -6,6 +6,7 @@ import slideImg3 from '/images/slide3.svg'
 import cusService from '/images/customer-service.png'
 import searching from '/images/searching.png'
 import interview from '/images/interview.png'
+import line from '/images/Line@4x.png'
 import onlineInt from '/images/online-interview.png'
 import { aboutAnimation, homeAnimation } from '../util/animation'
 
