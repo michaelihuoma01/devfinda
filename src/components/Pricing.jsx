@@ -84,7 +84,7 @@ export default function Pricing() {
                 </li>
                 <li>
                   <span className='asterik'>*</span>
-                  Hassle-free remote hiring
+                  Hassle-free remote hiring.
                 </li>
               </ul>
               <div className='call-links'>
