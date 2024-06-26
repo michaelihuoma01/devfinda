@@ -138,6 +138,8 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  margin: 0 auto;
+  max-width: 1240px;
 }
 .orgs:before,
 .orgs:after {
@@ -200,9 +202,9 @@
   gap: 80px;
   justify-content: center;
   overflow: visible;
-  padding: 56px 32px 220px;
   position: relative;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
 }
 
 .client-text{
@@ -245,7 +247,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 600px; 
+  max-width: 550px; 
 }
 
 .cslide-1, .cslide-2, .cslide-3 {
@@ -323,6 +325,20 @@
   color: #b3b3b4;
 }
 
+@media screen and (max-width: 1300px) {
+.pricing-menu{
+  max-width: 1000px;
+}
+
+.clients-section{
+  max-width: 1000px;
+}
+.orgs{
+  max-width: 1000px;
+
+}
+}
+
 @media screen and (max-width: 1000px) {
   .pricing-menu {
     display: grid;
@@ -373,7 +389,12 @@
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 801px) {
+  .orgs{
+  max-width: none;
+  width: 100%;
+
+}
   .pricing-container {
     margin: 0;
   }

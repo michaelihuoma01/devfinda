@@ -66,7 +66,6 @@ export default function Navbar() {
         <a href='#pricing' onClick={closeMenu}>
           Pricing
         </a>
-
         <a href='#testimonials' onClick={closeMenu}>
           Testimonials
         </a>
@@ -74,7 +73,7 @@ export default function Navbar() {
           FAQs
         </a>
       </div>
-      <div>
+      <div className='navbar-right'>
         <Link className='hiring-btn' onClick={closeMenu}>
           Start Hiring
         </Link>

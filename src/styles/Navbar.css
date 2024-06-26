@@ -1,7 +1,10 @@
+/* Base Styles for Navbar */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
   background-color: #fff;
   z-index: 1000;
   transition: top 0.3s;
@@ -34,12 +37,6 @@
 
 .navbar.hide {
   top: -100px;
-}
-
-.brand {
-  color: #5271fe;
-  margin: 0;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
 .menu-icon {
@@ -88,14 +85,30 @@
   max-height: 533px;
   z-index: 2;
 }
-.menu a{
-  color: #000;
 
+.menu a {
+  color: #000;
 }
 
+.navbar-right {
+  display: none; /* Hidden by default */
+}
 
+.hiring-btn {
+  padding: 10px 20px;
+  background-color: #5271fe;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
 
-@media (min-width: 768px) {
+.hiring-btn:hover {
+  background-color: #ff1265;
+}
+
+@media (min-width: 801px) {
   .menu {
     display: flex;
     flex-direction: row;
@@ -110,7 +123,12 @@
   }
 
   .menu-icon {
-    display: none;
+    display: none; /* Hide menu icon on larger screens */
+  }
+
+  .navbar-right {
+    display: flex; /* Show the navbar right section on larger screens */
+    align-items: center;
   }
 
   .navbar {
@@ -122,16 +140,6 @@
   }
 
   .hiring-btn {
-    padding: 10px 20px;
-    background-color: #5271fe;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-
-  .hiring-btn:hover {
-    background-color: #ff1265;
+    display: block;
   }
 }
