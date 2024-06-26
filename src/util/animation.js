@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 export function homeAnimation() {
-  console.log('homeAnimation initialized')
+ 
 
   gsap.fromTo(
     '.expand-container',
@@ -18,29 +18,44 @@ export function homeAnimation() {
   //   { y: 0, opacity: 1, ease: 'power3.out', duration: 2 }
   // )
 
-  gsap.set('.home-info article', { opacity: 0 })
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.home-info',
-      start: 'top 90%',
-      toggleActions: 'play none none none',
-    },
-  })
+  const isMobile = window.innerWidth <= 768;
 
-  tl.fromTo(
-    '.home-info article:first-child',
-    { y: 150, opacity: 0 }, // Start from the bottom
-    { y: 0, opacity: 1, ease: 'expo.out', duration: 2 }
-  ).fromTo(
-    '.home-info article:last-child',
-    { y: 150, opacity: 0 }, // Start from the bottom
-    { y: 0, opacity: 1, ease: 'expo.out', duration: 2 }
-  )
+  gsap.fromTo(
+    '.expand',
+    { y: 150, opacity: 0 }, 
+    { y: 0, opacity: 1, duration: 1, ease: 'expo.out' }
+  );
+
+  gsap.fromTo(
+    '.homeImg',
+    { y: 150, opacity: 0 }, 
+    { y: 0, opacity: 1, ease: 'power3.out', duration: 2 }
+  );
+
+  gsap.set('.home-info article', { opacity: 0 });
+
+  gsap.utils.toArray('.home-info article').forEach((article) => {
+    gsap.fromTo(
+      article,
+      { y: 150, opacity: 0 }, 
+      {
+        y: 0,
+        opacity: 1,
+        ease: 'expo.out',
+        duration: 2,
+        scrollTrigger: {
+          trigger: article,
+          start: isMobile ? 'top bottom' : 'top 80%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
+  });
 }
 
 export function aboutAnimation() {
-  console.log('aboutAnimation initialized')
+
 
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -141,7 +156,6 @@ export function aboutAnimation() {
 }
 
 export function pricingAnimation() {
-  console.log('pricingAnimation initialized')
 
   gsap.fromTo(
     '.pricing-container',
@@ -242,7 +256,6 @@ export function pricingAnimation() {
 }
 
 export function faqAnimation() {
-  console.log('faqAnimation initialized')
 
   gsap.fromTo(
     '.faq-header',
@@ -282,7 +295,6 @@ export function faqAnimation() {
 }
 
 export function footerAnimation() {
-  console.log('footerAnimation initialized')
 
   gsap.fromTo(
     '.techiesImg',
