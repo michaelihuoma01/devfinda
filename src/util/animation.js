@@ -7,34 +7,34 @@ export function homeAnimation() {
   console.log('homeAnimation initialized')
 
   gsap.fromTo(
-    '.expand',
-    { y: 100, opacity: 0 },
-    { y: 0, opacity: 1, duration: 1 }
+    '.expand-container',
+    { y: 150, opacity: 0 },
+    { y: 0, opacity: 1, duration: 2, ease: 'expo.out' }
   )
 
-  gsap.fromTo(
-    '.homeImg',
-    { x: 100, opacity: 0 },
-    { x: 0, opacity: 1, ease: 'power3.out', duration: 2 }
-  )
+  // gsap.fromTo(
+  //   '.homeImg',
+  //   { y: 150, opacity: 0 },
+  //   { y: 0, opacity: 1, ease: 'power3.out', duration: 2 }
+  // )
 
   gsap.set('.home-info article', { opacity: 0 })
 
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.home-info',
-      start: 'top 90%', 
+      start: 'top 90%',
       toggleActions: 'play none none none',
     },
   })
 
   tl.fromTo(
     '.home-info article:first-child',
-    { y: -100, opacity: 0 },
+    { y: 150, opacity: 0 }, // Start from the bottom
     { y: 0, opacity: 1, ease: 'expo.out', duration: 2 }
   ).fromTo(
     '.home-info article:last-child',
-    { y: 100, opacity: 0 },
+    { y: 150, opacity: 0 }, // Start from the bottom
     { y: 0, opacity: 1, ease: 'expo.out', duration: 2 }
   )
 }
@@ -51,42 +51,38 @@ export function aboutAnimation() {
 
   tl.fromTo(
     '.about-info',
-    { y: 100, opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      ease: 'expo.out',
-      duration: 2.5,
-    }
+    { y: 150, opacity: 0 },
+    { y: 0, opacity: 1, duration: 2, ease: 'expo.out' }
+  ).fromTo(
+    '.slides',
+    { y: 150, opacity: 0 },
+    { y: 0, opacity: 1, duration: 2, ease: 'expo.out' },
+    '-=1'
   )
-    .fromTo(
-      '.slides.slide-1',
-      { opacity: 0 },
-      { opacity: 1, duration: 1 },
-      '-=2'
-    )
-    .fromTo(
-      '.slides.slide-2',
-      { opacity: 0 },
-      { opacity: 1, duration: 1 },
-      '-=1.5'
-    )
-    .fromTo(
-      '.slides.slide-3',
-      { opacity: 0 },
-      { opacity: 1, duration: 1 },
-      '-=1'
-    )
+  // .fromTo(
+  //   '.slides.slide-2',
+  //   { opacity: 0 },
+  //   { opacity: 1, duration: 1 },
+  //   '-=1.5'
+  // )
+  // .fromTo(
+  //   '.slides.slide-3',
+  //   { opacity: 0 },
+  //   { opacity: 1, duration: 1 },
+  //   '-=1'
+  // )
 
   // GUIDES
   gsap.fromTo(
     '.guide h1',
+
     { y: 100, opacity: 0 },
+
     {
       y: 0,
       opacity: 1,
+      duration: 2,
       ease: 'expo.out',
-      duration: 2.5,
       scrollTrigger: {
         trigger: '.guide h1',
         start: 'top bottom',
@@ -114,12 +110,8 @@ export function aboutAnimation() {
   // ROLES
   gsap.fromTo(
     '.roles',
-    { y: 100, opacity: 0 },
-    {
-      y: 0,
-      opacity: 1,
-      ease: 'expo.out',
-      duration: 2.5,
+    { y: 150, opacity: 0 }, 
+    { y: 0, opacity: 1, duration: 2, ease: 'expo.out' ,
       scrollTrigger: {
         trigger: '.roles',
         start: 'top bottom',
@@ -167,60 +159,69 @@ export function pricingAnimation() {
     }
   )
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.call-section',
-      start: 'top bottom',
-    },
-  })
+ 
+  gsap.fromTo(
+    '.call-section',
+    { y: 150, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      ease: 'expo.out',
+      scrollTrigger: {
+        trigger: '.call-section',
+        start: 'top bottom',
+      },
+    }
+  )
 
-  if (window.innerWidth <= 768) {
-    tl.fromTo(
-      '.callImg',
-      { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 2, ease: 'power3.out' }
-    )
-      .fromTo(
-        '.call-info h1',
-        { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 2.5, ease: 'expo.out' }
-      )
-      .fromTo(
-        '.call-list li',
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'expo.out', stagger: 0.2 },
-        '-=2'
-      )
-      .fromTo(
-        '.call-links',
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' },
-        '-=1'
-      )
-  } else {
-    tl.fromTo(
-      '.call-info h1',
-      { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
-    )
-      .fromTo(
-        '.call-list li',
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power3.out', stagger: 0.2 }
-      )
-      .fromTo(
-        '.call-links',
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
-        '-=0.5'
-      )
-      .fromTo(
-        '.callImg',
-        { x: 100, opacity: 0 },
-        { x: 0, opacity: 1, duration: 2, ease: 'power3.out' },
-        '-=1.1'
-      )
-  }
+  // if (window.innerWidth <= 768) {
+  //   tl.fromTo(
+  //     '.callImg',
+  //     { y: 100, opacity: 0 },
+  //     { y: 0, opacity: 1, duration: 2, ease: 'power3.out' }
+  //   )
+  //     .fromTo(
+  //       '.call-info h1',
+  //       { y: 100, opacity: 0 },
+  //       { y: 0, opacity: 1, duration: 2.5, ease: 'expo.out' }
+  //     )
+  //     .fromTo(
+  //       '.call-list li',
+  //       { y: 50, opacity: 0 },
+  //       { y: 0, opacity: 1, duration: 1, ease: 'expo.out', stagger: 0.2 },
+  //       '-=2'
+  //     )
+  //     .fromTo(
+  //       '.call-links',
+  //       { y: 50, opacity: 0 },
+  //       { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' },
+  //       '-=1'
+  //     )
+  // } else {
+  //   tl.fromTo(
+  //     '.call-info h1',
+  //     { y: 100, opacity: 0 },
+  //     { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
+  //   )
+  //     .fromTo(
+  //       '.call-list li',
+  //       { y: 50, opacity: 0 },
+  //       { y: 0, opacity: 1, duration: 1, ease: 'power3.out', stagger: 0.2 }
+  //     )
+  //     .fromTo(
+  //       '.call-links',
+  //       { y: 50, opacity: 0 },
+  //       { y: 0, opacity: 1, duration: 1, ease: 'power3.out' },
+  //       '-=0.5'
+  //     )
+  //     .fromTo(
+  //       '.callImg',
+  //       { x: 100, opacity: 0 },
+  //       { x: 0, opacity: 1, duration: 2, ease: 'power3.out' },
+  //       '-=1.1'
+  //     )
+  // }
 
   // hba
   gsap.fromTo(
@@ -230,7 +231,7 @@ export function pricingAnimation() {
       y: 0,
       opacity: 1,
       ease: 'expo.out',
-      duration: 2.5,
+      duration: 2,
       scrollTrigger: {
         trigger: '.client-text',
         start: 'top bottom',
@@ -290,7 +291,23 @@ export function footerAnimation() {
       y: 0,
       opacity: 1,
       ease: 'expo.out',
-      duration: 2.5,
+      duration: 2,
+      scrollTrigger: {
+        trigger: '.footer-info',
+        start: 'top bottom',
+        toggleActions: 'play none none none',
+        once: true,
+      },
+    }
+  )
+  gsap.fromTo(
+    '.details',
+    { y: 100, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      ease: 'expo.out',
+      duration: 2,
       scrollTrigger: {
         trigger: '.footer-info',
         start: 'top bottom',
