@@ -15,7 +15,7 @@ export default function Home() {
   })
   return (
     <>
-      <section id='home' className='expand-container'>
+      <section id='home' className='expand-container wrapper'>
         <div className='expand'>
           <h1>
             Expand Your Team, <br />

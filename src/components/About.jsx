@@ -19,7 +19,7 @@ export default function About() {
   return (
     <>
       <main id='about' className='about'>
-        <div className='about-info'>
+        <div className='about-info wrapper'>
           <h1>Thats where we come in</h1>
           <p>
             Saving money is just the beginning. Explore just a few of the
@@ -55,7 +55,7 @@ export default function About() {
           </article>
         </section>
         <section className='guide'>
-          <h1>
+          <h1 className='wrapper'>
             Your Experience with Us: <br /> A Quick Guide
           </h1>
           <main className='guides'>
@@ -90,7 +90,7 @@ export default function About() {
             </div>
           </main>
         </section>
-        <div className='roles'>
+        <div className='roles wrapper'>
           <h1>Essential Roles Sourced Globally</h1>
           <p>
             We work with businesses of all sizes, from startups to large

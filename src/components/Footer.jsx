@@ -20,8 +20,8 @@ export default function Footer() {
     <>
       <footer>
         <div className='footer-info'>
-          <img src={techies} alt='' className='techiesImg' />
-          <div className='details'>
+          <img src={techies} alt='' className='techiesImg wrapper' />
+          <div className='details wrapper'>
             <h1>Take Your Tech Talents Worldwide!</h1>
             <p>
               Ready to boost your tech career globally? Join our network for top

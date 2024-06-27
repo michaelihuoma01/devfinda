@@ -30,22 +30,20 @@ export default function Navbar() {
     }
   }, [])
 
-const scrollToSection = (id) => {
-    
-  const element = document.getElementById(id)
-  const navbarHeight = document.querySelector('.navbar').offsetHeight
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id)
+    const navbarHeight = document.querySelector('.navbar').offsetHeight
 
-  if (element) {
-    const offsetTop = element.offsetTop - navbarHeight
-    window.scrollTo({
-      top: offsetTop,
-      behavior: 'smooth',
-    })
+    if (element) {
+      const offsetTop = element.offsetTop - navbarHeight
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      })
+    }
+    closeMenu()
+    setIsScrollingUp(true) // Ensure the navbar is visible after scrolling
   }
-  closeMenu()
-}
-
-
 
   return (
     <nav className={`navbar ${isScrollingUp ? 'show' : 'hide'}`}>
