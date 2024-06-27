@@ -42,7 +42,7 @@ export default function Navbar() {
       })
     }
     closeMenu()
-    setIsScrollingUp(true) // Ensure the navbar is visible after scrolling
+    setIsScrollingUp(true) 
   }
 
   return (
@@ -84,7 +84,7 @@ export default function Navbar() {
       </div>
       <div className='navbar-right'>
         <NavLink
-          to='#pricing'
+          to='/start-hiring'
           className='hiring-btn'
           onClick={() => scrollToSection('pricing')}
         >

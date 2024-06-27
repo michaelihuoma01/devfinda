@@ -10,7 +10,6 @@ import alan from '/images/profile2.jpg'
 import { homeAnimation } from '../util/animation'
 
 export default function Home() {
-  
   useEffect(() => {
     homeAnimation()
   })
@@ -26,18 +25,13 @@ export default function Home() {
             Hire world-class tech talent overseas at a fraction of the cost of
             US hires
           </p>
-          <Link
-            to='//embed.typeform.com/next/embed/01J1CDB9FCV42QX256SBD7EY80'
-            className='hiring-btn s-btn'
-          >
-            Start Hiring!
-          </Link>
+          <Link className='hiring-btn s-btn' to='/start-hiring' >Start Hiring!</Link>
         </div>
         <img src={homeImg} alt='' className='homeImg' />
       </section>
       <div className='main-info'>
         <main className='home-info'>
-          <article className='article-contentgi'>
+          <article className='article-content'>
             <div className='info1'>
               <h1>Did you know?</h1>
               <p>

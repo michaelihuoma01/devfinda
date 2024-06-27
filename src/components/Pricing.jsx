@@ -25,24 +25,7 @@ export default function Pricing() {
           <h1>Pricing</h1>
           <div className='pricing'>
             <h2>$3000/month</h2>
-            {/* <ul className='pricing-list'>
-              <li>
-                <img src='' alt='' />
-                <p>Access to unlimited talents</p>
-              </li>
-              <li>
-                <img src='' alt='' />
-                <p>High-Quality Talent</p>
-              </li>
-              <li>
-                <img src='' alt='' />
-                <p>Seamless Onboarding & Hiring Process</p>
-              </li>
-              <li>
-                <img src='' alt='' />
-                <p>No Hidden Costs</p>
-              </li>
-            </ul> */}
+            
             <ul className='pricing-list'>
               <li>
                 <i className='fa-solid fa-check icon'></i>
@@ -64,7 +47,9 @@ export default function Pricing() {
                 <p>No Hidden Costs</p>
               </li>
             </ul>
-            <Link className='hire-btn'>Start Hiring!</Link>
+            <Link className='hire-btn' to='/start-hiring'>
+              Start Hiring!
+            </Link>
           </div>
         </article>
       </section>
