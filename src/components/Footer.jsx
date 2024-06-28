@@ -101,14 +101,14 @@ export default function Footer() {
                 Testimonials
               </Link>
               <Link
-                to='pricing'
+                to='#pricing'
                 onClick={() => scrollTosection('pricing')}
                 className='page-links'
               >
                 Pricing
               </Link>
               <Link
-                to='faqs'
+                to='#faqs'
                 onClick={() => scrollTosection('faqs')}
                 className='page-links'
               >
