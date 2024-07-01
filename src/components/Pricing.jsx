@@ -117,8 +117,10 @@ export default function Pricing() {
               </p>
               <div className='client-info'>
                 <img src={user1} alt='' />
-                <h1>Fredric Alexander</h1>
-                <h2>Fusion Enterprises LLC</h2>
+                <div>
+                  <h1>Fredric Alexander</h1>
+                  <h2>Fusion Enterprises LLC</h2>
+                </div>
               </div>
             </div>
             <div className='client-slide cslide-2'>
@@ -129,8 +131,10 @@ export default function Pricing() {
               </p>
               <div className='client-info'>
                 <img src={user2} alt='' />
-                <h1>Marcus Greene</h1>
-                <h2>Startup Founder</h2>
+                <div>
+                  <h1>Marcus Greene</h1>
+                  <h2>Startup Founder</h2>
+                </div>
               </div>
             </div>
             <div className='client-slide cslide-3'>
@@ -141,8 +145,10 @@ export default function Pricing() {
               </p>
               <div className='client-info'>
                 <img src={user3} alt='' />
-                <h1>James Rodriguez</h1>
-                <h2>Founder, TechSolutions</h2>
+                <div>
+                  <h1>James Rodriguez</h1>
+                  <h2>Founder, TechSolutions</h2>
+                </div>
               </div>
             </div>
             <div className='client-slide cslide-1'>
@@ -153,8 +159,10 @@ export default function Pricing() {
               </p>
               <div className='client-info'>
                 <img src={user1} alt='' />
-                <h1>Fredric Alexander</h1>
-                <h2>Fusion Enterprises LLC</h2>
+                <div>
+                  <h1>Fredric Alexander</h1>
+                  <h2>Fusion Enterprises LLC</h2>
+                </div>
               </div>
             </div>
             <div className='client-slide cslide-2'>
@@ -165,8 +173,10 @@ export default function Pricing() {
               </p>
               <div className='client-info'>
                 <img src={user2} alt='' />
-                <h1>Marcus Greene</h1>
-                <h2>Startup Founder</h2>
+                <div>
+                  <h1>Marcus Greene</h1>
+                  <h2>Startup Founder</h2>
+                </div>
               </div>
             </div>
             <div className='client-slide cslide-3'>
@@ -177,8 +187,10 @@ export default function Pricing() {
               </p>
               <div className='client-info'>
                 <img src={user3} alt='' />
-                <h1>James Rodriguez</h1>
-                <h2>Founder, TechSolutions</h2>
+                <div>
+                  <h1>James Rodriguez</h1>
+                  <h2>Founder, TechSolutions</h2>
+                </div>
               </div>
             </div>
           </div>

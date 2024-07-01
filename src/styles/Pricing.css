@@ -1,6 +1,6 @@
 .pricing-menu {
   margin: 120px auto;
-  max-width: 1010px;
+  max-width: 1110px;
 }
 
  .pricing-container {
@@ -103,13 +103,19 @@
 }
 
 .call-container {
-  display: grid;
-  place-items: center;
+  /* display: grid; */
+  /* place-items: center; */
+  /* max-width: 1240px; */
+  display: flex;
+  justify-content: center;
 }
 
 .call-section {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1040px;
+  width: 100%;
   gap: 40px;
   margin-bottom: 100px;
 }
@@ -122,7 +128,7 @@
 }
 
 .call-info h1 {
-  font-size: 28px;
+  font-size: 32px;
   font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }
 
@@ -133,7 +139,7 @@
   font-size: 18px;
   color: #000;
   /* max-width: 342px; */
-  width: 342px;
+  /* width: 342px; */
   font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 .call-list li {
@@ -261,7 +267,7 @@
 
 .client-text h1 {
   align-self: center;
-  font-size: 28px;
+  font-size: 32px;
   font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
   margin-bottom: 16px;
 }
@@ -292,7 +298,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .cslide-1,
@@ -310,8 +316,9 @@
 
 .client-info {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
 }
 .client-info img {
   width: 73px;
@@ -371,7 +378,11 @@
 .cslide-3 h2 {
   color: #b3b3b4;
 }
-
+@media screen and (min-width: 1500px) {
+  .pricing-menu {
+    max-width: 1240px;
+  }
+}
 @media screen and (max-width: 1300px) {
   .pricing-menu {
     max-width: 1000px;
@@ -403,6 +414,9 @@
     flex-direction: column;
     /* width: 92%; */
     /* padding: 40px; */
+  }
+  .call-info{
+    padding: 20px;
   }
 
   .callImg {

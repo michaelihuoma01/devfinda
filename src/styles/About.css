@@ -11,7 +11,7 @@
 
 .about-info h1 {
   font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .about-info p {
@@ -98,7 +98,7 @@
   display: grid;
   place-items: center;
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
   margin-bottom: 30px;
 }
@@ -139,7 +139,7 @@
 }
 
 .roles h1 {
-  font-size: 28px;
+  font-size: 32px;
   margin-bottom: 16px;
   font-family: 'Recoleta Black', 'Recoleta Black Placeholder', sans-serif;
 }

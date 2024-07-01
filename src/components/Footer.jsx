@@ -115,16 +115,16 @@ export default function Footer() {
                 FAQs
               </Link>
             </ul>
-            <Link className='contact'>
+            <div className='contact'>
               <h1>Contact</h1>
               <Link className='mail'>
                 <i
-                  class='fa-regular fa-envelope'
+                  className='fa-regular fa-envelope'
                   style={{ color: '#ffffff' }}
                 ></i>
                 <p>hello@devfinda.com</p>
               </Link>
-            </Link>
+            </div>
           </article>
         </main>
         <p className='copyright'>Copyright &copy; {year}</p>

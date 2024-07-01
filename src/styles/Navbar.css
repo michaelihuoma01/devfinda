@@ -1,17 +1,25 @@
-
-.navbar {
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eceaea;
   position: fixed;
   top: 0;
   background-color: #fff;
   z-index: 1000;
-  transition: top 0.3s;
-  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.mb {
+  margin-bottom: 180px;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1240px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #eceaea;
-  margin-bottom: 32px;
-  width: 100%;
+  padding: 20px 20px; 
 }
 
 .video-logo-container {
@@ -27,14 +35,6 @@
   width: 100%;
   height: auto;
   display: block;
-}
-
-.navbar.show {
-  top: 0;
-}
-
-.navbar.hide {
-  top: -100px;
 }
 
 .menu-icon {
@@ -75,7 +75,7 @@
   transition: max-height 1s ease-out;
   overflow: hidden;
   max-height: 0;
-  font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder', sans-serif;
 }
 
 .menu.open {
@@ -90,7 +90,7 @@
 }
 
 .navbar-right {
-  display: none; 
+  display: none;
 }
 
 .hiring-btn {
@@ -107,6 +107,19 @@
   background-color: #ff1265;
 }
 
+
+
+@media screen and (min-width: 1500px) {
+ .navbar-container{
+  max-width: 90%;
+ }
+}
+@media screen and (max-width: 1300px) {
+ .navbar-container{
+  max-width: 90%;
+ }
+}
+
 @media (min-width: 801px) {
   .menu {
     display: flex;
@@ -118,27 +131,42 @@
     width: auto;
     background-color: transparent;
     overflow: visible;
-    font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Plus Jakarta Sans Placeholder',
+      sans-serif;
   }
 
   .menu-icon {
-    display: none; 
+    display: none;
   }
 
   .navbar-right {
-    display: flex; 
+    display: flex;
     align-items: center;
   }
 
   .navbar {
     justify-content: space-between;
   }
-  
+
   .menu a {
     padding: 0;
   }
 
   .hiring-btn {
     display: block;
+  }
+}
+
+.nav-bar.hide {
+  transform: translateY(-100%);
+}
+
+.nav-bar.show {
+  transform: translateY(0);
+}
+
+@media (max-width: 801px) {
+  .mb {
+    margin-bottom: 90px;
   }
 }

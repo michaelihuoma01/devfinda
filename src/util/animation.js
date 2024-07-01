@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 export function homeAnimation() {
-  document.querySelectorAll('.wrapper').forEach((wrapper) => {
+  document.querySelectorAll('.expand-wrapper').forEach((wrapper) => {
     gsap.set(wrapper, {
       y: 150,
     })
@@ -13,7 +13,7 @@ export function homeAnimation() {
       y: 0,
       opacity: 1,
       ease: 'expo.out',
-      duration: 2.5,
+      duration: 2,
       scrollTrigger: {
         trigger: wrapper,
         start: 'top bottom',
@@ -22,31 +22,65 @@ export function homeAnimation() {
     })
   })
 
-  const isMobile = window.innerWidth <= 768;
+  gsap.utils.toArray('.article-content').forEach((article, index) => {
+    const elements = article.children
+    const isMobile = window.innerWidth <= 801
 
-  gsap.set('.home-info article', { opacity: 0 });
-
-  gsap.utils.toArray('.home-info article').forEach((article) => {
-    gsap.fromTo(
-      article,
-      { y: 150, opacity: 0 }, 
-      {
-        y: 0,
-        opacity: 1,
-        ease: 'expo.out',
-        duration: 2.5,
-        scrollTrigger: {
-          trigger: article,
-          start: isMobile ? 'top bottom' : 'top 80%',
-          toggleActions: 'play none none none',
-        },
+    if (isMobile) {
+      gsap.fromTo(
+        elements,
+        { y: 150, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          ease: 'expo.out',
+          scrollTrigger: {
+            trigger: article,
+            start: 'top 90%',
+            toggleActions: 'play none none none',
+          },
+        }
+      )
+    } else {
+      if (index === 0) {
+        gsap.fromTo(
+          elements,
+          { y: -150, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 2.5,
+            ease: 'expo.out',
+            scrollTrigger: {
+              trigger: article,
+              start: 'top 70%',
+              toggleActions: 'play none none none',
+            },
+          }
+        )
+      } else {
+        gsap.fromTo(
+          elements,
+          { y: 150, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 2.5,
+            ease: 'expo.out',
+            scrollTrigger: {
+              trigger: article,
+              start: 'top 20%',
+              toggleActions: 'play none none none',
+            },
+          }
+        )
       }
-    );
-  });
+    }
+  })
 }
 
 export function aboutAnimation() {
-
   const desktopAnimation = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -68,24 +102,23 @@ export function aboutAnimation() {
   }
 
   const mobileAnimation = () => {
-    
-      document.querySelectorAll('.wrapper').forEach((wrapper) => {
-        gsap.set(wrapper, {
-          y: 150,
-        })
-
-        gsap.to(wrapper, {
-          y: 0,
-          opacity: 1,
-          ease: 'expo.out',
-          duration: 2.5,
-          scrollTrigger: {
-            trigger: wrapper,
-            start: 'top bottom',
-            toggleActions: 'play none none none',
-          },
-        })
+    document.querySelectorAll('.wrapper').forEach((wrapper) => {
+      gsap.set(wrapper, {
+        y: 150,
       })
+
+      gsap.to(wrapper, {
+        y: 0,
+        opacity: 1,
+        ease: 'expo.out',
+        duration: 2.5,
+        scrollTrigger: {
+          trigger: wrapper,
+          start: 'top bottom',
+          toggleActions: 'play none none none',
+        },
+      })
+    })
 
     gsap.utils.toArray('.slides').forEach((slide) => {
       gsap.fromTo(
@@ -130,7 +163,6 @@ export function aboutAnimation() {
 
   // ROLES
 
-
   gsap.utils.toArray('.role-info').forEach((roleInfo, index) => {
     gsap.fromTo(
       roleInfo,
@@ -152,29 +184,26 @@ export function aboutAnimation() {
 }
 
 export function pricingAnimation() {
+  document.querySelectorAll('.wrapper').forEach((wrapper) => {
+    gsap.set(wrapper, {
+      y: 150,
+    })
 
- 
-      document.querySelectorAll('.wrapper').forEach((wrapper) => {
-        gsap.set(wrapper, {
-          y: 150,
-        })
-
-        gsap.to(wrapper, {
-          y: 0,
-          opacity: 1,
-          ease: 'expo.out',
-          duration: 2.5,
-          scrollTrigger: {
-            trigger: wrapper,
-            start: 'top bottom',
-            toggleActions: 'play none none none',
-          },
-        })
-      })
+    gsap.to(wrapper, {
+      y: 0,
+      opacity: 1,
+      ease: 'expo.out',
+      duration: 2.5,
+      scrollTrigger: {
+        trigger: wrapper,
+        start: 'top bottom',
+        toggleActions: 'play none none none',
+      },
+    })
+  })
 }
 
 export function faqAnimation() {
-
   gsap.fromTo(
     '.faq-header',
     { y: 100, opacity: 0 },
@@ -213,21 +242,21 @@ export function faqAnimation() {
 }
 
 export function footerAnimation() {
-      document.querySelectorAll('.wrapper').forEach((wrapper) => {
-        gsap.set(wrapper, {
-          y: 150,
-        })
+  document.querySelectorAll('.wrapper').forEach((wrapper) => {
+    gsap.set(wrapper, {
+      y: 150,
+    })
 
-        gsap.to(wrapper, {
-          y: 0,
-          opacity: 1,
-          ease: 'expo.out',
-          duration: 2.5,
-          scrollTrigger: {
-            trigger: wrapper,
-            start: 'top bottom',
-            toggleActions: 'play none none none',
-          },
-        })
-      })
+    gsap.to(wrapper, {
+      y: 0,
+      opacity: 1,
+      ease: 'expo.out',
+      duration: 2.5,
+      scrollTrigger: {
+        trigger: wrapper,
+        start: 'top bottom',
+        toggleActions: 'play none none none',
+      },
+    })
+  })
 }

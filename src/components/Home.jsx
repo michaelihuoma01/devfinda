@@ -15,7 +15,7 @@ export default function Home() {
   })
   return (
     <>
-      <section id='home' className='expand-container wrapper'>
+      <section id='home' className='expand-container expand-wrapper'>
         <div className='expand'>
           <h1>
             Expand Your Team, <br />
@@ -25,7 +25,9 @@ export default function Home() {
             Hire world-class tech talent overseas at a fraction of the cost of
             US hires
           </p>
-          <Link className='hiring-btn s-btn' to='/start-hiring' >Start Hiring!</Link>
+          <Link className='hiring-btn s-btn' to='/start-hiring'>
+            Start Hiring!
+          </Link>
         </div>
         <img src={homeImg} alt='' className='homeImg' />
       </section>
